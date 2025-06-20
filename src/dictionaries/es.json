@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "title": "Camilo Cruz",
+    "subtitle": "Desarrollador Full Stack",
+    "description": "Soy un desarrollador <strong>FullStack</strong> con una pasión por construir soluciones <strong>robustas y escalables</strong>, especializándome en sistemas de administración y logística.",
+    "projectsButton": "Proyectos",
+    "contactButton": "Contacto"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "localeSwitcher": {
+    "switchLanguage": "Cambiar idioma"
+  }
+}

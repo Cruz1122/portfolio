@@ -1,0 +1,102 @@
+// src/components/Navbar.tsx
+'use client'
+
+import Link from 'next/link'
+import { useState } from 'react'
+import { usePathname } from 'next/navigation'
+import LocaleSwitcher from './LocaleSwitcher'
+import { Locale } from '@/i18n.config'
+
+// Define the shape of the navigation props
+interface NavigationProps {
+  navigation: {
+    home: string
+    about: string
+    projects: string
+    contact: string
+  }
+  lang: Locale
+}
+
+export default function Navbar({ navigation, lang }: Readonly<NavigationProps>) {
+  const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
+
+  const isActive = (path: string) => {
+    // The home path is just `/[lang]`, so it has a length of 3
+    if (path === `/${lang}` && pathname.length === 3) return true
+    // For other paths, check if the pathname starts with the given path
+    if (path !== `/${lang}`) return pathname.startsWith(path)
+    return false
+  }
+
+  const navLinks = [
+    { href: `/${lang}`, label: navigation.home },
+    { href: `/${lang}/about`, label: navigation.about },
+    { href: `/${lang}/projects`, label: navigation.projects },
+    { href: `/${lang}/contact`, label: navigation.contact },
+  ]
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-lg">
+      <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+        {/* Logo */}
+        <Link href={`/${lang}`} className="text-2xl font-bold text-white uppercase tracking-wider">
+          Camilo Cruz
+        </Link>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center gap-x-8">
+          <ul className="flex gap-x-8">
+            {navLinks.map(link => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className={`text-white/70 hover:text-white transition-colors ${isActive(link.href) ? 'text-white font-bold' : ''}`}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <LocaleSwitcher />
+        </div>
+
+        {/* Hamburger Button */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              {isOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              )}
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-black/80">
+          <ul className="flex flex-col items-center gap-y-4 py-4">
+             {navLinks.map(link => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  onClick={() => setIsOpen(false)} // Close menu on click
+                  className={`text-white/70 hover:text-white transition-colors text-lg ${isActive(link.href) ? 'text-white font-bold' : ''}`}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li className='pt-4'>
+                <LocaleSwitcher />
+            </li>
+          </ul>
+        </div>
+      )}
+    </nav>
+  )
+}
