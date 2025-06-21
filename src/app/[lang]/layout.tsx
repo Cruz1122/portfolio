@@ -46,9 +46,7 @@ export default async function RootLayout({
         <NavigationProgress /> 
           <Navbar navigation={navigation} lang={lang} />
           <PageTransition>
-            <div className="pt-16 md:pt-20">
               {children}
-            </div>
           </PageTransition>
       </body>
     </html>

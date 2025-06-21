@@ -29,7 +29,7 @@ export default function LocaleSwitcher() {
                         <ProgressBarLink
                             href={redirectedPathName(locale)}
                             className={`
-                                relative flex items-center gap-x-2 rounded-md px-3 py-1.5 
+                                relative flex items-center gap-x-2 rounded-md px-3 py-1.5 md:pr-7 lg:pr-3
                                 text-sm uppercase font-bold transition-colors duration-300
                                 
                                 before:content-[''] before:absolute before:top-0 before:left-0
@@ -43,7 +43,7 @@ export default function LocaleSwitcher() {
                                 after:transition-all after:duration-300
 
                                 ${isSelected
-                                    ? 'text-white bg-white/10 before:w-full before:h-full after:w-full after:h-full'
+                                    ? 'text-white bg-white/10 before:w-full before:h-full after:w-full after:h-full md:pr-7 lg:pr-3'
                                     : `
                                         text-white/70 hover:text-white 
                                         before:w-2 before:h-2 before:opacity-0 hover:before:opacity-100 hover:before:w-full hover:before:h-full
