@@ -14,5 +14,43 @@
   },
   "localeSwitcher": {
     "switchLanguage": "Cambiar idioma"
+  },
+  "projectsPage": {
+    "title": "Mis Proyectos",
+    "subtitle": "Una selección de proyectos que muestran mis habilidades.",
+    "viewInfo": "Ver información",
+    "closeInfo": "Cerrar",
+    "viewCode": "Ver código",
+    "viewLive": "Ver en vivo",
+    "technologies": "Tecnologías",
+    "projects": [
+      {
+        "title": "LogicSmart",
+        "description": "Aplicación completa que permite a las empresas de distribución optimizar sus operaciones a través de <strong>microservicios</strong> para el manejo de usuarios, pedidos, inventario, geolocalización y reportes de entregas.",
+        "tags": ["Vite", "React", "Node.js", "JavaScript", "Express", "Socket.IO", "Docker", "GitHub Actions", "Prisma", "Mongoose", "PostgreSQL", "MongoDB" ],
+        "highlightedTags": ["React", "Node.js", "Docker", "PostgreSQL", "MongoDB"],
+        "imageUrl": "/images/projects/LogicSmart.png",
+        "liveUrl": "https://logistics-frontend-m2q1.onrender.com",
+        "codeUrl": "#"
+      },
+      {
+        "title": "Gestión de tiendas",
+        "description": "Aplicación completa que permite a los dueños de tiendas gestionar su inventario, pedidos, clientes y ventas. También proporciona un <strong>panel de control</strong> para análisis y reportes.",
+        "tags": ["ASP.NET", "C#", "JavaScript", "PostgreSQL", "Entity Framework", "ASP.NET Core", "Bootstrap"],
+        "highlightedTags": ["ASP.NET", "C#", "JavaScript", "PostgreSQL", "Bootstrap"],
+        "imageUrl": "/images/projects/StoreManagement.png",
+        "liveUrl": "#",
+        "codeUrl": "https://github.com/Cgomez333/StoreManagement/"
+      },
+      {
+        "title": "Gestión de funerarias",
+        "description": "Sitio web completo que permite a los dueños de funerarias gestionar su inventario, roles y usuarios. También incluye un sistema de <strong>autenticación</strong> completo con tokens JWT y control de acceso basado en roles.",
+        "tags": ["Angular", "TypeScript", "Node.js", "LoopBack", "MySQL", "MongoDB", "MaterializeCSS"],
+        "highlightedTags": ["Angular", "TypeScript", "Node.js", "LoopBack", "MySQL", "MongoDB"],
+        "imageUrl": "/images/projects/MortuaryManagement.png",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      }
+    ]
   }
 }

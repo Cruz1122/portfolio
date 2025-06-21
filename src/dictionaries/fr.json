@@ -14,5 +14,43 @@
   },
   "localeSwitcher": {
     "switchLanguage": "Changer de langue"
+  },
+  "projectsPage": {
+    "title": "Mes Projets",
+    "subtitle": "Une sélection de projets qui montrent mes compétences.",
+    "viewInfo": "Voir les informations",
+    "closeInfo": "Fermer",
+    "viewCode": "Voir le code",
+    "viewLive": "Voir en direct", 
+    "technologies": "Technologies",
+    "projects": [
+      {
+        "title": "LogicSmart",
+        "description": "Application complète qui permet aux entreprises de distribution d'optimiser leurs opérations grâce à des <strong>microservices</strong> pour la gestion des utilisateurs, des commandes, de l'inventaire, de la localisation et des rapports de livraisons.",
+        "tags": ["Vite", "React", "Node.js", "JavaScript", "Express", "Socket.IO", "Docker", "GitHub Actions", "Prisma", "Mongoose", "PostgreSQL", "MongoDB" ],
+        "highlightedTags": ["React", "Node.js", "Docker", "PostgreSQL", "MongoDB"],
+        "imageUrl": "/images/projects/LogicSmart.png",
+        "liveUrl": "https://logistics-frontend-m2q1.onrender.com",
+        "codeUrl": "#"
+      },
+      {
+        "title": "Gestion de la boutique",
+        "description": "Application complète qui permet aux propriétaires de boutiques de gérer leur inventaire, leurs commandes, leurs clients et leurs ventes. Il fournit également un <strong>tableau de bord</strong> pour l'analyse et les rapports.",
+        "tags": ["ASP.NET", "C#", "JavaScript", "PostgreSQL", "Entity Framework", "ASP.NET Core", "Bootstrap"],
+        "highlightedTags": ["ASP.NET", "C#", "JavaScript", "PostgreSQL", "Bootstrap"],
+        "imageUrl": "/images/projects/StoreManagement.png",
+        "liveUrl": "#",
+        "codeUrl": "https://github.com/Cgomez333/StoreManagement/"
+      },
+      {
+        "title": "Site web de funérailles",
+        "description": "Site web complet qui permet aux propriétaires de funérailles de gérer leur inventaire, leurs rôles et leurs utilisateurs. Il inclut également un système d'authentification complet avec des <strong>jetons JWT</strong> et un contrôle d'accès basé sur les rôles.",
+        "tags": ["Angular", "TypeScript", "Node.js", "LoopBack", "MySQL", "MongoDB", "MaterializeCSS"],
+        "highlightedTags": ["Angular", "TypeScript", "Node.js", "LoopBack", "MySQL", "MongoDB"],
+        "imageUrl": "/images/projects/MortuaryManagement.png",
+        "liveUrl": "#",
+        "codeUrl": "#"
+      }
+    ]
   }
 }

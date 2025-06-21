@@ -3,7 +3,6 @@ import Link from 'next/link';
 import LowPolyBackground from '@/components/LowPolyBackground'; 
 import { getDictionary } from '@/dictionaries';
 import { Locale } from '@/i18n.config';
-import LocaleSwitcher from '@/components/LocaleSwitcher';
 
 export default async function HomePage({
   params,
@@ -14,9 +13,9 @@ export default async function HomePage({
   const dict = await getDictionary(lang);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)]">
       <LowPolyBackground/>
-      <main className="relative z-10 flex items-center justify-center w-full h-full text-white">
+      <main className="relative z-10 flex items-center justify-center w-full min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)] py-8 text-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
@@ -32,10 +31,10 @@ export default async function HomePage({
                 dangerouslySetInnerHTML={{ __html: dict.hero.description }}
               />
               <div className="mt-8 flex justify-center md:justify-start gap-4">
-                <Link href={`/${lang}#proyectos`} className="border-2 border-white text-white font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-300">
+                <Link href={`/${lang}/projects`} className="border-2 border-white text-white font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-300">
                   {dict.hero.projectsButton}
                 </Link>
-                <Link href={`/${lang}/contacto`} className="border-2 border-gray-500 text-gray-300 font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-gray-500 hover:text-white transition-colors duration-300">
+                <Link href={`/${lang}/contact`} className="border-2 border-gray-500 text-gray-300 font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-gray-500 hover:text-white transition-colors duration-300">
                   {dict.hero.contactButton}
                 </Link>
               </div>
