@@ -5,7 +5,8 @@ import { i18n } from "@/i18n.config";
 import Navbar from "@/components/Navbar";
 import { getDictionary } from "@/dictionaries";
 import PageTransition from '@/components/PageTransition' 
-
+import 'nprogress/nprogress.css'
+import NavigationProgress from '@/components/NavigationProgress'; // <-- 2. Import the new component
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,12 +43,13 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <PageTransition>
+        <NavigationProgress /> 
           <Navbar navigation={navigation} lang={lang} />
-          <div className="pt-16 md:pt-20">
-            {children}
-          </div>
-        </PageTransition>
+          <PageTransition>
+            <div className="pt-16 md:pt-20">
+              {children}
+            </div>
+          </PageTransition>
       </body>
     </html>
   );

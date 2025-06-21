@@ -1,7 +1,7 @@
 // src/components/Navbar.tsx
 'use client'
 
-import Link from 'next/link'
+import ProgressBarLink from './ProgressBarLink'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import LocaleSwitcher from './LocaleSwitcher'
@@ -41,16 +41,16 @@ export default function Navbar({ navigation, lang }: Readonly<NavigationProps>) 
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-lg">
       <div className="container mx-auto px-6 py-3 flex justify-between items-center">
         {/* Logo */}
-        <Link href={`/${lang}`} className="text-2xl font-bold text-white uppercase tracking-wider">
+        <ProgressBarLink href={`/${lang}`} className="text-2xl font-bold text-white uppercase tracking-wider">
           Camilo Cruz
-        </Link>
+        </ProgressBarLink>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-x-8">
           <ul className="flex gap-x-8">
             {navLinks.map(link => (
               <li key={link.href}>
-                <Link
+                <ProgressBarLink
                   href={link.href}
                   className={`
                     relative px-2 py-1 text-white/70 hover:text-white transition-colors duration-300
@@ -75,7 +75,7 @@ export default function Navbar({ navigation, lang }: Readonly<NavigationProps>) 
                   `}
                 >
                   {link.label}
-                </Link>
+                </ProgressBarLink>
               </li>
             ))}
           </ul>
@@ -102,13 +102,13 @@ export default function Navbar({ navigation, lang }: Readonly<NavigationProps>) 
           <ul className="flex flex-col items-center gap-y-4 py-4">
              {navLinks.map(link => (
               <li key={link.href}>
-                <Link
+                <ProgressBarLink
                   href={link.href}
                   onClick={() => setIsOpen(false)} // Close menu on click
                   className={`text-white/70 hover:text-white transition-colors text-lg ${isActive(link.href) ? 'text-white font-bold' : ''}`}
                 >
                   {link.label}
-                </Link>
+                </ProgressBarLink>
               </li>
             ))}
             <li className='pt-4'>

@@ -22,5 +22,24 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nprogress .bar {
+  /* Cambia el color de la barra. Puedes usar cualquier color hexadecimal. */
+  background: #fbfcfd !important; /* Un azul vibrante como ejemplo */
+
+  /* Cambia la altura de la barra */
+  height: 3px !important;
+}
+
+/* El "peg" o punto brillante al final de la barra */
+#nprogress .peg {
+  /* La sombra que le da el efecto de "brillo". 
+     La hacemos del mismo color que la barra para un look cohesivo. */
+  box-shadow: 0 0 10px #ffffff, 0 0 5px #3d3d3d !important;
+}
+
+/* El spinner (rueda giratoria) */
+#nprogress .spinner-icon {
+  display: none !important;
 }

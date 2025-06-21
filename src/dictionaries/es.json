@@ -5,7 +5,7 @@
     "description": "Soy un desarrollador <strong>FullStack</strong> con una pasión por construir soluciones <strong>robustas y escalables</strong>, especializándome en sistemas de administración y logística.",
     "projectsButton": "Proyectos",
     "contactButton": "Contáctame",
-    "cvButton": "Ver CV"
+    "cvButton": "Descargar CV"
   },
   "navigation": {
     "home": "Inicio",
@@ -19,7 +19,7 @@
   "projectsPage": {
     "title": "Mis Proyectos",
     "subtitle": "Una selección de proyectos que muestran mis habilidades.",
-    "viewInfo": "Ver información",
+    "viewInfo": "Detalles",
     "closeInfo": "Cerrar",
     "viewCode": "Ver código",
     "viewLive": "Ver en vivo",

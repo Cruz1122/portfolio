@@ -1,7 +1,7 @@
 // src/components/LocaleSwitcher.tsx
 'use client'
 
-import Link from 'next/link'
+import ProgressBarLink from './ProgressBarLink'
 import { usePathname } from 'next/navigation'
 import { i18n } from '@/i18n.config'
 import Image from 'next/image'
@@ -26,7 +26,7 @@ export default function LocaleSwitcher() {
                 const isSelected = locale === currentLocale
                 return (
                     <li key={locale}>
-                        <Link
+                        <ProgressBarLink
                             href={redirectedPathName(locale)}
                             className={`
                                 relative flex items-center gap-x-2 rounded-md px-3 py-1.5 
@@ -60,7 +60,7 @@ export default function LocaleSwitcher() {
                                 className="w-5 h-5 relative z-10"
                             />
                             <span className="relative z-10">{locale}</span>
-                        </Link>
+                        </ProgressBarLink>
                     </li>
                 )
             })}

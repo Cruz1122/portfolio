@@ -1,9 +1,10 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
+import ProgressBarLink from './ProgressBarLink'
 import { useState } from 'react'
 import TechIcon, { TechName } from './TechIcon'
+import { AiOutlineInfoCircle } from 'react-icons/ai'
 
 interface ProjectCardProps {
     title: string
@@ -60,7 +61,10 @@ export default function ProjectCard({
                         onClick={() => setIsModalOpen(true)}
                         className="w-full border-2 border-white text-white py-2 px-4 rounded-sm tracking-widest hover:bg-white hover:text-black transition-colors duration-300 font-medium cursor-pointer"
                     >
-                        {viewInfo}
+                        
+                        <div className="flex items-center justify-center">
+                            <AiOutlineInfoCircle className="mr-2" />{viewInfo}
+                        </div>
                     </button>
                 </div>
             </div>
@@ -113,7 +117,6 @@ export default function ProjectCard({
 
                                 <div className="mb-6">
                                     <h3 className="text-lg font-semibold text-white mb-3">{technologies}</h3>
-                                    {/* Ensure the gap is appropriate for chips, e.g., gap-2 */}
                                     <div className="flex flex-wrap gap-2">
                                         {tags.map((tag) => (
                                             <TechIcon key={tag} name={tag as TechName} showLabel={true} />
@@ -124,7 +127,7 @@ export default function ProjectCard({
                                 {/* Links */}
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     {liveUrl && (
-                                        <Link 
+                                        <ProgressBarLink 
                                             href={liveUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer" 
@@ -134,9 +137,9 @@ export default function ProjectCard({
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                             </svg>
                                             {viewLive}
-                                        </Link>
+                                        </ProgressBarLink>
                                     )}
-                                    <Link 
+                                    <ProgressBarLink 
                                         href={codeUrl} 
                                         target="_blank" 
                                         rel="noopener noreferrer" 
@@ -146,7 +149,7 @@ export default function ProjectCard({
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                                         </svg>
                                         {viewCode}
-                                    </Link>
+                                    </ProgressBarLink>
                                 </div>
                             </div>
                         </div>

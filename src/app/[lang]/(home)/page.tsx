@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import ProgressBarLink from '@/components/ProgressBarLink';
 import LowPolyBackground from '@/components/LowPolyBackground'; 
 import { getDictionary } from '@/dictionaries';
 import { Locale } from '@/i18n.config';
@@ -32,19 +32,19 @@ export default async function HomePage({
                 dangerouslySetInnerHTML={{ __html: dict.hero.description }}
               />
               <div className="mt-8 flex justify-center md:justify-start gap-4">
-                <Link href={`/${lang}/projects`} className="border-2 border-white text-white font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-white hover:text-gray-900 hover:border-gray-200 transition-all duration-300 flex items-center gap-2 text-xs md:text-base shadow-lg hover:shadow-xl">
+                <ProgressBarLink href={`/${lang}/projects`} className="border-2 border-white text-white font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-white hover:text-gray-900 hover:border-gray-200 transition-all duration-300 flex items-center gap-2 text-xs md:text-base shadow-lg hover:shadow-xl">
                   <FaFolderOpen />
                   {dict.hero.projectsButton}
-                </Link>
-                <Link href={`/${lang}/contact`} className="border-2 border-gray-300 text-gray-300 font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-blue-600 hover:text-white hover:border-blue-500 transition-all duration-300 flex items-center gap-2 text-xs md:text-base shadow-lg hover:shadow-xl">
+                </ProgressBarLink>
+                <ProgressBarLink href={`/${lang}/contact`} className="border-2 border-gray-300 text-gray-300 font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-blue-600 hover:text-white hover:border-blue-500 transition-all duration-300 flex items-center gap-2 text-xs md:text-base shadow-lg hover:shadow-xl">
                   <FaEnvelope />
                   {dict.hero.contactButton}
-                </Link>
+                </ProgressBarLink>
               </div>
-              <Link href={`/${lang}/cv`} className="mt-4 flex justify-center items-center border-2 border-gray-300 text-gray-300 font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-green-600 hover:text-white hover:border-green-500 transition-all duration-300 gap-2 text-xs md:text-base shadow-lg hover:shadow-xl">
+              <ProgressBarLink href={`/${lang}/cv`} className="mt-4 flex justify-center items-center border-2 border-gray-300 text-gray-300 font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-green-600 hover:text-white hover:border-green-500 transition-all duration-300 gap-2 text-xs md:text-base shadow-lg hover:shadow-xl">
                 <FaFileAlt />
                 {dict.hero.cvButton}
-              </Link>
+              </ProgressBarLink>
             </div>
 
             <div className="flex justify-center items-center">
