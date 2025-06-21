@@ -2,25 +2,28 @@
 
 // Icons remain the same
 import {
-    SiVite, SiReact, SiNodedotjs, SiJavascript, SiExpress, SiSocketdotio,
-    SiDocker, SiGithubactions, SiPrisma, SiMongoose, SiPostgresql, SiMongodb, SiTailwindcss, SiNextdotjs, SiFramer, SiTypescript,
-    SiDotnet,
-    SiLoopback,
-    SiMysql,
-    SiAngular,
-    SiSharp,
-    SiBootstrap,
-    SiCss3
+    SiVite, SiReact, SiNodedotjs, SiJavascript, SiExpress, SiSocketdotio, SiDocker,
+    SiGithubactions, SiPrisma, SiMongoose, SiPostgresql, SiMongodb, SiTailwindcss,
+    SiNextdotjs, SiFramer, SiTypescript, SiDotnet, SiAngular, SiLoopback,
+    SiMysql, SiPython, SiFlask, SiGit, SiGithub, SiAmazonwebservices, SiVercel,
+    SiNginx, SiNetlify, SiRender, SiCss3, SiHtml5, SiTrello, SiJira, SiNotion, SiFigma, SiCanva,
+    SiBootstrap
 } from 'react-icons/si'
-import { FaReact } from 'react-icons/fa'
+import { AiOutlineJava } from 'react-icons/ai'
 import { TbBrandThreejs } from 'react-icons/tb'
 
 // Type definition remains the same
 export type TechName =
-    | 'Vite' | 'React' | 'Node.js' | 'JavaScript' | 'Express' | 'Socket.IO'
-    | 'Docker' | 'GitHub Actions' | 'Prisma' | 'Mongoose' | 'PostgreSQL'
-    | 'MongoDB' | 'Tailwind CSS' | 'Next.js' | 'TypeScript' | 'Framer Motion'
-    | 'Three.js' | 'i18n' | 'ASP.NET' | 'C#' | 'Entity Framework' | 'ASP.NET Core' | 'Angular' | 'MySQL' | 'LoopBack' | 'MaterializeCSS' | 'Bootstrap';
+    | 'Vite' | 'React' | 'Node.js' | 'JavaScript' | 'Express' | 'Socket.IO' | 'Docker'
+    | 'GitHub Actions' | 'Prisma' | 'Mongoose' | 'PostgreSQL' | 'MongoDB'
+    | 'Tailwind CSS' | 'Next.js' | 'TypeScript' | 'Framer Motion' | 'Three.js'
+    | 'i18n' | 'ASP.NET' | 'C#' | 'Entity Framework' | 'Bootstrap' | 'Angular'
+    | 'LoopBack' | 'MySQL' | 'MaterializeCSS' | 'Python' | 'Java' | 'Flask' | 'Git'
+    | 'GitHub' | 'AWS' | 'Vercel' | 'Nginx' | 'Netlify' | 'Render' | 'CSS' | 'HTML'
+    | 'Trello' | 'Jira' | 'Notion' | 'Figma' | 'Canva' | 'Prisma ORM' | 'Scrum'
+    | 'Kanban' | 'Waterfall' | 'Branching Strategies' | 'Pull Requests' | 'Merge Requests'
+    | 'CI/CD' | 'Teamwork' | 'Effective Communication' | 'Problem Solving'
+    | 'Continuous Learning' | 'Time Management' | 'ASP.NET Core';
 
 interface TechIconProps {
     name: TechName;
@@ -35,7 +38,7 @@ export default function TechIcon({ name, showLabel = false, className = "h-4 w-4
     const renderIcon = () => {
         switch (name) {
             case 'React':
-                return <FaReact {...iconProps} />;
+                return <SiReact {...iconProps} />;
             case 'Next.js':
                 return <SiNextdotjs {...iconProps} />;
             case 'Node.js':
@@ -86,6 +89,42 @@ export default function TechIcon({ name, showLabel = false, className = "h-4 w-4
                 return <SiBootstrap {...iconProps} />;
             case 'C#':
                 return <span className="text-white font-bold text-center text-xs m-0 p-0 flex items-center justify-center" style={{ width: '12px', height: '12px' }}>C#</span>;
+            case 'Java':
+                return <AiOutlineJava {...iconProps} />;
+            case 'Flask':
+                return <SiFlask {...iconProps} />;
+            case 'Git':
+                return <SiGit {...iconProps} />;
+            case 'AWS':
+                return <SiAmazonwebservices {...iconProps} />;
+            case 'Vercel':
+                return <SiVercel {...iconProps} />;
+            case 'Nginx':
+                return <SiNginx {...iconProps} />;
+            case 'Netlify':
+                return <SiNetlify {...iconProps} />;
+            case 'Render':
+                return <SiRender {...iconProps} />;
+            case 'CSS':
+                return <SiCss3 {...iconProps} />;
+            case 'HTML':
+                return <SiHtml5 {...iconProps} />;
+            case 'Trello':
+                return <SiTrello {...iconProps} />;
+            case 'Jira':
+                return <SiJira {...iconProps} />;
+            case 'Notion':
+                return <SiNotion {...iconProps} />;
+            case 'Figma':
+                return <SiFigma {...iconProps} />;
+            case 'Canva':
+                return <SiCanva {...iconProps} />;
+            case 'Prisma ORM':
+                return <SiPrisma {...iconProps} />;
+            case 'Python':
+                return <SiPython {...iconProps} />;
+            case 'GitHub':
+                return <SiGithub {...iconProps} />;
             default:
                 return;
         }

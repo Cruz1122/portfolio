@@ -46,12 +46,55 @@
       {
         "title": "Gestión de funerarias",
         "description": "Sitio web completo que permite a los dueños de funerarias gestionar su inventario, roles y usuarios. También incluye un sistema de <strong>autenticación</strong> completo con tokens JWT y control de acceso basado en roles.",
-        "tags": ["Angular", "TypeScript", "Node.js", "LoopBack", "MySQL", "MongoDB", "MaterializeCSS"],
-        "highlightedTags": ["Angular", "TypeScript", "Node.js", "LoopBack", "MySQL", "MongoDB"],
+        "tags": ["Angular", "TypeScript", "Python", "Flask", "Node.js", "LoopBack", "MySQL", "MongoDB", "MaterializeCSS"],
+        "highlightedTags": ["Angular", "TypeScript", "Python", "Flask", "Node.js", "LoopBack", "MySQL", "MongoDB"],
         "imageUrl": "/images/projects/MortuaryManagement.png",
         "liveUrl": "#",
         "codeUrl": "#"
       }
     ]
+  },
+  "aboutPage": {
+    "title": "Sobre Mí",
+    "subtitle": "Un poco sobre mi trayectoria y lo que me impulsa.",
+    "paragraph1": "¡Hola! Soy Camilo, un desarrollador <strong>Full Stack</strong> con una profunda pasión por crear soluciones digitales que no solo son <strong>funcionales y robustas</strong>, sino también <strong>intuitivas y agradables</strong> para el usuario final. Mi viaje en el mundo del desarrollo empezó por una pequeña pasión por la <strong>creación de cosas</strong>; poder moldear objetos y darles vida a mi antojo. A medida que crecía y aprendía, mi pasión por la programación se fue convirtiendo en una carrera dedicada a construir <strong>soluciones digitales</strong> que impacten positivamente a la sociedad, mis ganas de seguir <strong>aprendiendo y aportando</strong> a la comunidad están más fuertes que nunca.",
+    "paragraph2": "Me encantan los <strong>desafíos</strong> y estoy en constante aprendizaje de nuevas tecnologías para mantenerme a la <strong>vanguardia de la industria</strong>. Creo que las mejores aplicaciones nacen de la combinación de <strong>código limpio</strong>, <strong>diseño centrado en el usuario</strong> y una <strong>colaboración eficaz</strong>.",
+    "skillsTitle": "Mis Habilidades Principales",
+    "programmingLanguages": {
+      "title": "Lenguajes de Programación",
+      "skills": ["JavaScript", "TypeScript", "C#", "Python", "Java"]
+    },
+    "frameworksTechnologies": {
+      "title": "Frameworks y Tecnologías Principales",
+      "skills": ["React", "Next.js", "Node.js", "Angular", "ASP.NET", "Express", "Socket.IO", "Flask"]
+    },
+    "databases": {
+      "title": "Bases de Datos",
+      "skills": ["PostgreSQL", "MongoDB", "MySQL", "Prisma ORM", "Entity Framework", "Mongoose"]
+    },
+    "devOps": {
+    "title": "DevOps y Herramientas",
+    "skills": ["Docker", "GitHub Actions", "Git", "Vite", "AWS", "Vercel", "Nginx", "Netlify", "Render"]
+    },
+    "styling": {
+      "title": "Estilos y UI/UX",
+      "skills": ["Tailwind CSS", "Bootstrap", "MaterializeCSS", "Framer Motion", "Three.js", "CSS", "HTML"]
+    },
+    "methodologies": {
+      "title": "Metodologías Ágiles",
+      "skills": ["Scrum", "Kanban", "Cascada"]
+    },
+    "versionControl": {
+      "title": "Control de Versiones",
+      "skills": ["Git", "GitHub", "Branching Strategies", "Pull Requests", "Merge Requests", "CI/CD"]
+    },
+    "projectManagement": {
+      "title": "Gestión de Proyectos",
+      "skills": ["Trello", "Jira", "Notion", "Figma", "Canva"]
+    },
+    "softSkills": {
+      "title": "Habilidades Blandas",
+      "skills": ["Trabajo en Equipo", "Comunicación Efectiva", "Resolución de Problemas", "Aprendizaje Continuo", "Gestión del Tiempo"]
+    }
   }
 }

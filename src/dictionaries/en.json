@@ -46,12 +46,118 @@
       {
         "title": "Mortuary Website",
         "description": "A full website that allows mortuary owners to manage their inventory, roles, and users. It also includes a full <strong>authentication system</strong> with JWT tokens and role-based access control.",
-        "tags": ["Angular", "TypeScript", "Node.js", "LoopBack", "MySQL", "MongoDB", "MaterializeCSS"],
-        "highlightedTags": ["Angular", "TypeScript", "Node.js", "LoopBack", "MySQL", "MongoDB"],
+        "tags": ["Angular", "TypeScript", "Python", "Flask", "Node.js", "LoopBack", "MySQL", "MongoDB", "MaterializeCSS"],
+        "highlightedTags": ["Angular", "TypeScript", "Python", "Flask", "Node.js", "LoopBack", "MySQL", "MongoDB"],
         "imageUrl": "/images/projects/MortuaryManagement.png",
         "liveUrl": "#",
         "codeUrl": "#"
       }
     ]
+  },
+  "aboutPage": {
+    "title": "About Me",
+    "subtitle": "A little about my journey and what motivates me.",
+    "paragraph1": "Hello! I'm Camilo, a <strong>Full Stack developer</strong> with a deep passion for creating digital solutions that are not only <strong>functional and robust</strong> but also <strong>intuitive and user-friendly</strong>. My journey in the world of development began with a small passion for creating things; being able to mold objects and give them life to my liking. As I grew and learned, my passion for programming turned into a career dedicated to building <strong>digital solutions</strong> that positively impact society. My desire to keep learning and contributing to the community is stronger than ever.",
+    "paragraph2": "I love <strong>challenges</strong> and am constantly learning new technologies to stay at the <strong>forefront of the industry</strong>. I believe the best applications are born from a combination of <strong>clean code</strong>, <strong>user-centered design</strong> and an <strong>effective collaboration</strong>.",
+    "skillsTitle": "My Main Skills",
+    "programmingLanguages": {
+      "title": "Programming Languages",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "C#",
+        "Python",
+        "Java"
+      ]
+    },
+    "frameworksTechnologies": {
+      "title": "Frameworks and Main Technologies",
+      "skills": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Angular",
+        "ASP.NET",
+        "Express",
+        "Socket.IO",
+        "Flask"
+      ]
+    },
+    "databases": {
+      "title": "Database and ORMs",
+      "skills": [
+        "PostgreSQL",
+        "MongoDB",
+        "MySQL",
+        "Prisma ORM",
+        "Entity Framework",
+        "Mongoose"
+      ]
+    },
+    "devOps": {
+      "title": "DevOps and Tools",
+      "skills": [
+        "Docker",
+        "GitHub Actions",
+        "Git",
+        "Vite",
+        "AWS",
+        "Vercel",
+        "Nginx",
+        "Netlify",
+        "Render"
+      ]
+    },
+    "styling": {
+      "title": "Styling and UI/UX",
+      "skills": [
+        "Tailwind CSS",
+        "Bootstrap",
+        "MaterializeCSS",
+        "Framer Motion",
+        "Three.js",
+        "CSS",
+        "HTML"
+      ]
+    },
+    "methodologies": {
+      "title": "Agile Methodologies",
+      "skills": [
+        "Scrum",
+        "Kanban",
+        "Waterfall"
+      ]
+    },
+    "versionControl": {
+      "title": "Version Control",
+      "skills": [
+        "Git",
+        "GitHub",
+        "Branching Strategies",
+        "Pull Requests",
+        "Merge Requests",
+        "CI/CD"
+      ]
+    },
+    "projectManagement": {
+      "title": "Project Management",
+      "skills": [
+        "Trello",
+        "Jira",
+        "Notion",
+        "Figma",
+        "Canva"
+      ]
+    },
+    "softSkills": {
+      "title": "Soft Skills",
+      "skills": [
+        "Teamwork",
+        "Effective Communication",
+        "Problem Solving",
+        "Continuous Learning",
+        "Time Management"
+      ]
+    }
   }
 }

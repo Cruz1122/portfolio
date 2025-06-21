@@ -46,12 +46,118 @@
       {
         "title": "Site web de funérailles",
         "description": "Site web complet qui permet aux propriétaires de funérailles de gérer leur inventaire, leurs rôles et leurs utilisateurs. Il inclut également un système d'authentification complet avec des <strong>jetons JWT</strong> et un contrôle d'accès basé sur les rôles.",
-        "tags": ["Angular", "TypeScript", "Node.js", "LoopBack", "MySQL", "MongoDB", "MaterializeCSS"],
-        "highlightedTags": ["Angular", "TypeScript", "Node.js", "LoopBack", "MySQL", "MongoDB"],
+        "tags": ["Angular", "TypeScript", "Python", "Flask", "Node.js", "LoopBack", "MySQL", "MongoDB", "MaterializeCSS"],
+        "highlightedTags": ["Angular", "TypeScript", "Python", "Flask", "Node.js", "LoopBack", "MySQL", "MongoDB"],
         "imageUrl": "/images/projects/MortuaryManagement.png",
         "liveUrl": "#",
         "codeUrl": "#"
       }
     ]
+  },
+  "aboutPage": {
+    "title": "À propos de moi",
+    "subtitle": "Un peu sur mon parcours et ce qui me motive.",
+    "paragraph1": "Bonjour! Je suis Camilo, un développeur <strong>Full Stack</strong> passionné par la création de solutions digitales qui ne sont pas seulement <strong>fonctionnelles et robustes</strong>, mais aussi <strong>intuitives et utilisateurs</strong>. Mon parcours dans le monde du développement a commencé avec une petite passion pour la création de choses; pouvoir modeler des objets et leur donner vie à mon goût. Au fur et à mesure que j'ai grandi et appris, ma passion pour la programmation s'est transformée en une carrière dédiée à la construction de <strong>solutions digitales</strong> qui ont un impact positif sur la société. Ma volonté de continuer à apprendre et de contribuer à la communauté est plus forte que jamais.",
+    "paragraph2": "J'aime les <strong>défis</strong> et je suis constamment à la recherche de nouvelles technologies pour rester à la <strong>pointe de l'industrie</strong>. Je crois que les meilleures applications naissent de la combinaison de <strong>code propre</strong>, <strong>design centré sur l'utilisateur</strong> et de <strong>collaboration efficace</strong>.",
+    "skillsTitle": "Mes Compétences Principales",
+    "programmingLanguages": {
+      "title": "Langages de Programmation",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "C#",
+        "Python",
+        "Java"
+      ]
+    },
+    "frameworksTechnologies": {
+      "title": "Frameworks et Technologies Principales",
+      "skills": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Angular",
+        "ASP.NET",
+        "Express",
+        "Socket.IO",
+        "Flask"
+      ]
+    },
+    "databases": {
+      "title": "Base de Données et ORMs",
+      "skills": [
+        "PostgreSQL",
+        "MongoDB",
+        "MySQL",
+        "Prisma ORM",
+        "Entity Framework",
+        "Mongoose"
+      ]
+    },
+    "devOps": {
+      "title": "DevOps et Outils",
+      "skills": [
+        "Docker",
+        "GitHub Actions",
+        "Git",
+        "Vite",
+        "AWS",
+        "Vercel",
+        "Nginx",
+        "Netlify",
+        "Render"
+      ]
+    },
+    "styling": {
+      "title": "Styling et UI/UX",
+      "skills": [
+        "Tailwind CSS",
+        "Bootstrap",
+        "MaterializeCSS",
+        "Framer Motion",
+        "Three.js",
+        "CSS",
+        "HTML"
+      ]
+    },
+    "methodologies": {
+      "title": "Méthodologies Agiles",
+      "skills": [
+        "Scrum",
+        "Kanban",
+        "Cascade"
+      ]
+    },
+    "versionControl": {
+      "title": "Contrôle de Version",
+      "skills": [
+        "Git",
+        "GitHub",
+        "Branching Strategies",
+        "Pull Requests",
+        "Merge Requests",
+        "CI/CD"
+      ]
+    },
+    "projectManagement": {
+      "title": "Gestion de Projets",
+      "skills": [
+        "Trello",
+        "Jira",
+        "Notion",
+        "Figma",
+        "Canva"
+      ]
+    },
+    "softSkills": {
+      "title": "Compétences Transversales",
+      "skills": [
+        "Travail en Equipe",
+        "Communication Efficace",
+        "Résolution de Problèmes",
+        "Apprentissage Continu",
+        "Gestion du Temps"
+      ]
+    }
   }
 }
