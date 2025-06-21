@@ -4,7 +4,8 @@
     "subtitle": "Développeur Full Stack",
     "description": "Je suis un <strong>développeur FullStack</strong> passionné par la construction de <strong>solutions robustes et scalables</strong>, spécialisé dans les systèmes d'administration et de logistique.",
     "projectsButton": "Projets",
-    "contactButton": "Contactez-moi"
+    "contactButton": "Contactez-moi",
+    "cvButton": "Voir le CV"
   },
   "navigation": {
     "home": "Accueil",

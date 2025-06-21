@@ -4,13 +4,14 @@
     "subtitle": "Desarrollador Full Stack",
     "description": "Soy un desarrollador <strong>FullStack</strong> con una pasión por construir soluciones <strong>robustas y escalables</strong>, especializándome en sistemas de administración y logística.",
     "projectsButton": "Proyectos",
-    "contactButton": "Contacto"
+    "contactButton": "Contáctame",
+    "cvButton": "Ver CV"
   },
   "navigation": {
     "home": "Inicio",
     "about": "Sobre mí",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contáctame"
   },
   "localeSwitcher": {
     "switchLanguage": "Cambiar idioma"

@@ -52,7 +52,27 @@ export default function Navbar({ navigation, lang }: Readonly<NavigationProps>) 
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`text-white/70 hover:text-white transition-colors ${isActive(link.href) ? 'text-white font-bold' : ''}`}
+                  className={`
+                    relative px-2 py-1 text-white/70 hover:text-white transition-colors duration-300
+                    
+                    /* Top-left corner bracket (::before) */
+                    before:content-[''] before:absolute before:top-0 before:left-0
+                    before:w-2 before:h-2 before:border-l-2 before:border-t-2
+                    before:opacity-0 before:transition-all before:duration-300
+                    hover:before:w-full hover:before:h-full hover:before:opacity-100
+
+                    /* Bottom-right corner bracket (::after) */
+                    after:content-[''] after:absolute after:bottom-0 after:right-0
+                    after:w-2 after:h-2 after:border-r-2 after:border-b-2
+                    after:opacity-0 after:transition-all after:duration-300
+                    hover:after:w-full hover:after:h-full hover:after:opacity-100
+
+                    /* Style for the active link */
+                    ${isActive(link.href)
+                      ? 'text-white font-bold before:w-full before:h-full before:opacity-100 after:w-full after:h-full after:opacity-100'
+                      : ''
+                    }
+                  `}
                 >
                   {link.label}
                 </Link>
