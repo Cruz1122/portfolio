@@ -6,7 +6,7 @@ import { Locale } from '@/i18n.config'
 export default async function ProjectsPage({ params }: Readonly<{ params: Promise<{ lang: Locale }> }>) {
     const { lang } = await params
     const dict = await getDictionary(lang)
-    const { title, subtitle, projects, viewInfo, closeInfo, viewCode, viewLive, technologies } = dict.projectsPage
+    const { title, subtitle, projects, viewInfo, closeInfo, viewCode, viewLive, technologies, desktopApp, noAvailable } = dict.projectsPage
 
     return (
             <div className="relative w-full min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)]">
@@ -37,6 +37,8 @@ export default async function ProjectsPage({ params }: Readonly<{ params: Promis
                         viewCode={viewCode}
                         viewLive={viewLive}
                         technologies={technologies}
+                        desktopApp={desktopApp}
+                        noAvailable={noAvailable}
                         highlightedTags={project.highlightedTags}
                     />
                 ))}

@@ -17,6 +17,8 @@ interface ProjectCardProps {
     closeInfo: string
     viewCode: string
     viewLive: string
+    desktopApp: string
+    noAvailable: string
     technologies: string
     highlightedTags: string[]
 }
@@ -32,6 +34,8 @@ export default function ProjectCard({
     closeInfo,
     viewCode,
     viewLive,
+    desktopApp,
+    noAvailable,
     technologies,
     highlightedTags
 }: Readonly<ProjectCardProps>) {
@@ -117,19 +121,42 @@ export default function ProjectCard({
                                 </div>
 
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    {liveUrl && (
-                                        <ProgressBarLink 
-                                            href={liveUrl} 
-                                            target="_blank" 
-                                            rel="noopener noreferrer" 
-                                            className="bg-white hover:bg-red-500 hover:text-white text-black px-6 py-3 font-medium transition-colors flex items-center justify-center gap-2 border-2 border-white rounded-sm"
+                                    {liveUrl && liveUrl !== '#' && (
+                                        liveUrl === 'desktop' ? (
+                                            <button 
+                                                disabled
+                                                className="bg-white/20 hover:bg-white/10 text-white/50 px-6 py-3 font-medium flex items-center justify-center gap-2 border-2 border-white/20 rounded-sm cursor-not-allowed"
+                                            >
+                                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                </svg>
+                                                {desktopApp}
+                                            </button>
+                                        ) : (
+                                            <ProgressBarLink 
+                                                href={liveUrl} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer" 
+                                                className="bg-white hover:bg-red-500 hover:text-white text-black px-6 py-3 font-medium transition-colors flex items-center justify-center gap-2 border-2 border-white rounded-sm"
+                                            >
+                                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                                </svg>
+                                                {viewLive}
+                                            </ProgressBarLink>
+                                        )
+                                    )}
+                                    {liveUrl === '#' && (
+                                        <button 
+                                            disabled
+                                            className="bg-white/20 hover:bg-white/10 text-white/50 px-6 py-3 font-medium flex items-center justify-center gap-2 border-2 border-white/20 rounded-sm cursor-not-allowed"
                                         >
                                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                             </svg>
-                                            {viewLive}
-                                        </ProgressBarLink>
-                                    )}
+                                            {noAvailable}
+                                        </button>
+                                    )}  
                                     <ProgressBarLink 
                                         href={codeUrl} 
                                         target="_blank" 

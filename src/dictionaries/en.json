@@ -25,6 +25,8 @@
     "viewCode": "View Code",
     "viewLive": "View Live",
     "technologies": "Technologies",
+    "desktopApp": "Desktop App",
+    "noAvailable": "No available",
     "projects": [
       {
         "title": "LogicSmart",
@@ -33,7 +35,7 @@
         "highlightedTags": ["React", "Node.js", "Docker", "PostgreSQL", "MongoDB"],
         "imageUrl": "/images/projects/LogicSmart.png",
         "liveUrl": "https://logistics-frontend-m2q1.onrender.com",
-        "codeUrl": "#"
+        "codeUrl": "https://github.com/Cruz1122/logic-smart"
       },
       {
         "title": "Store Management App",
@@ -51,7 +53,25 @@
         "highlightedTags": ["Angular", "TypeScript", "Python", "Flask", "Node.js", "LoopBack", "MySQL", "MongoDB"],
         "imageUrl": "/images/projects/MortuaryManagement.png",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "https://github.com/Cruz1122/funeraria-digital"
+      },
+      {
+        "title": "Finite Automaton Operations",
+        "description": "This project allows you to perform finite automaton operations, including intersection and reverse operations with visual representation using matplotlib.",
+        "tags": ["Python", "Matplotlib", "NetworkX"],
+        "highlightedTags": ["Python", "Matplotlib", "NetworkX"],
+        "imageUrl": "/images/projects/FiniteAutomaton.png",
+        "liveUrl": "desktop",
+        "codeUrl": "https://github.com/Cruz1122/finite-automaton-operations"
+      },
+      {
+        "title": "PrometeOS",
+        "description": "A Python-based operating system simulation built with <strong>Tkinter</strong> that provides a complete desktop environment with various applications, user management, and system utilities. Features include a <strong>Lizard game</strong> powered by Pygame, <strong>image processing</strong> with Pillow, <strong>secure authentication</strong> using bcrypt, and <strong>system monitoring</strong> with psutil.",
+        "tags": ["Python", "Tkinter", "Pygame", "Pillow", "bcrypt", "psutil"],
+        "highlightedTags": ["Python", "Tkinter", "Pygame"],
+        "imageUrl": "/images/projects/PrometeOS.png",
+        "liveUrl": "desktop",
+        "codeUrl": "https://github.com/Cruz1122/prometeOS"
       }
     ]
   },
@@ -720,7 +740,10 @@
       "emailPlaceholder": "john.doe@email.com",
       "message": "Your Message",
       "messagePlaceholder": "Hello Camilo, I'd like to talk about...",
-      "submitButton": "Send Message"
+      "submitButton": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "An unexpected error occurred."
     }
   }
 }

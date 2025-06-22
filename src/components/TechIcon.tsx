@@ -6,9 +6,11 @@ import {
     SiNextdotjs, SiFramer, SiTypescript, SiDotnet, SiAngular, SiLoopback,
     SiMysql, SiPython, SiFlask, SiGit, SiGithub, SiAmazonwebservices, SiVercel,
     SiNginx, SiNetlify, SiRender, SiCss3, SiHtml5, SiTrello, SiJira, SiNotion, SiFigma, SiCanva,
-    SiBootstrap
+    SiBootstrap, SiPythonanywhere
 } from 'react-icons/si'
-import { AiOutlineJava } from 'react-icons/ai'
+import { AiOutlineJava, AiOutlinePython } from 'react-icons/ai'
+import { LuNetwork } from 'react-icons/lu'
+import { FcScatterPlot } from 'react-icons/fc'
 import { TbBrandThreejs } from 'react-icons/tb'
 
 export type TechName =
@@ -35,7 +37,7 @@ export type TechName =
     // Soft Skills (French)
     | 'Travail en Équipe' | 'Communication Efficace' | 'Résolution de Problèmes' | 'Apprentissage Continu' | 'Gestion du Temps'
     // Additional technologies
-    | 'ASP.NET Core' | 'Prisma';
+    | 'ASP.NET Core' | 'Prisma' | 'Matplotlib' | 'NetworkX' | 'Pygame' | 'Tkinter';
 
 interface TechIconProps {
     name: TechName;
@@ -93,6 +95,10 @@ export default function TechIcon({ name, showLabel = false, className = "h-4 w-4
         'Figma': <SiFigma {...iconProps} />,
         'Canva': <SiCanva {...iconProps} />,
         'Python': <SiPython {...iconProps} />,
+        'Matplotlib': <FcScatterPlot {...iconProps} />,
+        'NetworkX': <LuNetwork {...iconProps} />,
+        'Pygame': <SiPythonanywhere {...iconProps} />,
+        'Tkinter': <AiOutlinePython {...iconProps} />,
         // Soft skills and methodologies use fallback
         'Scrum': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">S</span></div>,
         'Kanban': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">K</span></div>,

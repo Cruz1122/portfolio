@@ -25,6 +25,8 @@
     "viewCode": "Ver código",
     "viewLive": "Ver en vivo",
     "technologies": "Tecnologías",
+    "desktopApp": "Aplicación de Escritorio",
+    "noAvailable": "No disponible",
     "projects": [
       {
         "title": "LogicSmart",
@@ -33,7 +35,7 @@
         "highlightedTags": ["React", "Node.js", "Docker", "PostgreSQL", "MongoDB"],
         "imageUrl": "/images/projects/LogicSmart.png",
         "liveUrl": "https://logistics-frontend-m2q1.onrender.com",
-        "codeUrl": "#"
+        "codeUrl": "https://github.com/Cruz1122/logic-smart"
       },
       {
         "title": "Gestión de tiendas",
@@ -51,7 +53,25 @@
         "highlightedTags": ["Angular", "TypeScript", "Python", "Flask", "Node.js", "LoopBack", "MySQL", "MongoDB"],
         "imageUrl": "/images/projects/MortuaryManagement.png",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "https://github.com/Cruz1122/funeraria-digital"
+      },
+      {
+        "title": "Operaciones de Autómatas Finitos",
+        "description": "Este proyecto permite realizar operaciones de autómatas finitos, incluyendo operaciones de intersección y reversa con representación visual usando matplotlib.",
+        "tags": ["Python", "Matplotlib", "NetworkX"],
+        "highlightedTags": ["Python", "Matplotlib", "NetworkX"],
+        "imageUrl": "/images/projects/FiniteAutomaton.png",
+        "liveUrl": "desktop",
+        "codeUrl": "https://github.com/Cruz1122/finite-automaton-operations"
+      },
+      {
+        "title": "PrometeOS",
+        "description": "Un sistema operativo basado en Python construido con <strong>Tkinter</strong> que proporciona un entorno de escritorio completo con diversas aplicaciones, administración de usuarios y utilidades del sistema. Incluye un <strong>juego de lagartos (Lizard)</strong> impulsado por Pygame, <strong>procesamiento de imágenes</strong> con Pillow, <strong>autenticación segura</strong> con bcrypt y <strong>monitoreo del sistema</strong> con psutil.",
+        "tags": ["Python", "Tkinter", "Pygame", "Pillow", "bcrypt", "psutil"],
+        "highlightedTags": ["Python", "Tkinter", "Pygame"],
+        "imageUrl": "/images/projects/PrometeOS.png",
+        "liveUrl": "desktop",
+        "codeUrl": "https://github.com/Cruz1122/prometeOS"
       }
     ]
   },
@@ -720,7 +740,10 @@
       "emailPlaceholder": "juan.perez@email.com",
       "message": "Tu Mensaje",
       "messagePlaceholder": "Hola Camilo, me gustaría hablar sobre...",
-      "submitButton": "Enviar Mensaje"
+      "submitButton": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado correctamente!",
+      "error": "Ocurrió un error inesperado."
     }
   }
 }

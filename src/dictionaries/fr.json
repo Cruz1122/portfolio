@@ -24,7 +24,9 @@
     "closeInfo": "Fermer",
     "viewCode": "Voir le code",
     "viewLive": "Voir en direct", 
-    "technologies": "Technologies",
+    "technologies": "Technologies", 
+    "desktopApp": "Application de Bureau",
+    "noAvailable": "Non disponible",
     "projects": [
       {
         "title": "LogicSmart",
@@ -33,7 +35,7 @@
         "highlightedTags": ["React", "Node.js", "Docker", "PostgreSQL", "MongoDB"],
         "imageUrl": "/images/projects/LogicSmart.png",
         "liveUrl": "https://logistics-frontend-m2q1.onrender.com",
-        "codeUrl": "#"
+        "codeUrl": "https://github.com/Cruz1122/logic-smart"
       },
       {
         "title": "Gestion de la boutique",
@@ -51,7 +53,25 @@
         "highlightedTags": ["Angular", "TypeScript", "Python", "Flask", "Node.js", "LoopBack", "MySQL", "MongoDB"],
         "imageUrl": "/images/projects/MortuaryManagement.png",
         "liveUrl": "#",
-        "codeUrl": "#"
+        "codeUrl": "https://github.com/Cruz1122/funeraria-digital"
+      },
+      {
+        "title": "Opérations d'Automates Finites",
+        "description": "Ce projet permet de réaliser des opérations d'automates finis, y compris des opérations d'intersection et de réversibilité avec une représentation visuelle à l'aide de matplotlib.",
+        "tags": ["Python", "Matplotlib", "NetworkX"],
+        "highlightedTags": ["Python", "Matplotlib", "NetworkX"],
+        "imageUrl": "/images/projects/FiniteAutomaton.png",
+        "liveUrl": "desktop",
+        "codeUrl": "https://github.com/Cruz1122/finite-automaton-operations"
+      },
+      {
+        "title": "PrometeOS",
+        "description": "Un système d'exploitation basé sur Python construit avec Tkinter qui fournit un environnement de bureau complet avec diverses applications, gestion des utilisateurs et utilitaires du système. Il inclut un <strong>jeu de lagartos (Lizard)</strong> piloté par Pygame, <strong>traitement d'images</strong> avec Pillow, <strong>authentification sécurisée</strong> avec bcrypt et <strong>surveillance du système</strong> avec psutil.",
+        "tags": ["Python", "Tkinter", "Pygame", "Pillow", "bcrypt", "psutil"],
+        "highlightedTags": ["Python", "Tkinter", "Pygame"],
+        "imageUrl": "/images/projects/PrometeOS.png",
+        "liveUrl": "desktop",
+        "codeUrl": "https://github.com/Cruz1122/prometeOS"
       }
     ]
   },
@@ -720,7 +740,10 @@
       "emailPlaceholder": "jean.dupont@email.com",
       "message": "Votre Message",
       "messagePlaceholder": "Bonjour Camilo, je voudrais discuter de...",
-      "submitButton": "Envoyer le Message"
+      "submitButton": "Envoyer le Message",
+      "sending": "Envoi...",
+      "success": "Message envoyé avec succès!",
+      "error": "Une erreur inattendue est survenue."
     }
   }
 }
