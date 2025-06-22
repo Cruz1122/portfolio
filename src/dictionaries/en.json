@@ -5,7 +5,8 @@
     "description": "I am a <strong>FullStack developer</strong> with a passion for building <strong>robust and scalable solutions</strong>, specializing in administration and logistics systems.",
     "projectsButton": "Projects",
     "contactButton": "Contact me",
-    "cvButton": "Download CV"
+    "cvButton": "Download CV",
+    "aboutButton": "About me"
   },
   "navigation": {
     "home": "Home",
@@ -703,6 +704,23 @@
           ]
         }
       ]
+    }
+  },
+  "contactPage": {
+    "title": "Get in Touch",
+    "subtitle": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out.",
+    "directContactTitle": "Direct Contact",
+    "email": "jccpyt@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/juan-camilo-cruz-parra-190024371/",
+    "whatsappTitle": "Contact me on WhatsApp",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "John Doe",
+      "email": "Your Email",
+      "emailPlaceholder": "john.doe@email.com",
+      "message": "Your Message",
+      "messagePlaceholder": "Hello Camilo, I'd like to talk about...",
+      "submitButton": "Send Message"
     }
   }
 }

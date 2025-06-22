@@ -41,7 +41,7 @@ interface AboutContentProps {
     hero: HeroData;
 }
 
-export default function AboutContent({ aboutPage, hero }: AboutContentProps) {
+export default function AboutContent({ aboutPage, hero }: Readonly<AboutContentProps>) {
     const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
 
     const { title, subtitle, paragraph1, paragraph2, skillsTitle, ...skillCategories } = aboutPage;

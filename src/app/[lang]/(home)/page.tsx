@@ -3,7 +3,7 @@ import ProgressBarLink from '@/components/ProgressBarLink';
 import LowPolyBackground from '@/components/LowPolyBackground'; 
 import { getDictionary } from '@/dictionaries';
 import { Locale } from '@/i18n.config';
-import { FaEnvelope, FaFileAlt, FaFolderOpen } from 'react-icons/fa';
+import { FaEnvelope, FaFileAlt, FaFolderOpen, FaUser } from 'react-icons/fa';
 
 export default async function HomePage({
   params,
@@ -24,27 +24,47 @@ export default async function HomePage({
               <h1 className="text-4xl font-black uppercase tracking-wider md:text-4xl lg:text-5xl">
                 {dict.hero.title}
               </h1>
-              <p className="text-lg md:text-2xl font-light text-gray-300 drop-shadow-[0_0_10px_rgba(156,163,175,0.5)]">
+              <p className="text-lg md:text-2xl font-light text-gray-300 drop-shadow-[0_0_10px_rgba(156,163,175,0.9)]">
                 {dict.hero.subtitle}
               </p>
               <p 
                 className="mt-4 max-w-md mx-auto md:mx-0 text-gray-400"
                 dangerouslySetInnerHTML={{ __html: dict.hero.description }}
               />
-              <div className="mt-8 flex justify-center md:justify-start gap-4">
-                <ProgressBarLink href={`/${lang}/projects`} className="border-2 border-white text-white font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-white hover:text-gray-900 hover:border-gray-200 transition-all duration-300 flex items-center gap-2 text-xs md:text-base shadow-lg hover:shadow-xl">
-                  <FaFolderOpen />
+              <div className="mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto md:mx-0">
+                <ProgressBarLink
+                  href={`/${lang}/about`}
+                  className="group relative overflow-hidden border-2 border-white text-white font-bold py-3 px-6 rounded-sm uppercase tracking-widest hover:bg-transparent hover:text-purple-300 hover:border-purple-300 transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm shadow-lg hover:shadow-purple-400/30 transform hover:scale-105"
+                >
+                  <FaUser className="transition-transform duration-300 group-hover:scale-110" />
+                  {dict.hero.aboutButton}
+                </ProgressBarLink>
+
+                <ProgressBarLink
+                  href={`/${lang}/cv`}
+                  className="group relative overflow-hidden border-2 border-white text-white font-bold py-3 px-6 rounded-sm uppercase tracking-widest hover:bg-transparent hover:text-green-300 hover:border-green-300 transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm shadow-lg hover:shadow-green-400/30 transform hover:scale-105"
+                >
+                  <FaFileAlt className="transition-transform duration-300 group-hover:rotate-6" />
+                  {dict.hero.cvButton}
+                </ProgressBarLink>
+
+                <ProgressBarLink 
+                  href={`/${lang}/projects`} 
+                  className="group relative overflow-hidden border-2 border-white text-white font-bold py-3 px-6 rounded-sm uppercase tracking-widest hover:bg-transparent hover:text-blue-300 hover:border-blue-300 transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm shadow-lg hover:shadow-blue-400/30 transform hover:scale-105"
+                >
+                  <FaFolderOpen className="transition-transform duration-300 group-hover:rotate-12" />
                   {dict.hero.projectsButton}
                 </ProgressBarLink>
-                <ProgressBarLink href={`/${lang}/contact`} className="border-2 border-gray-300 text-gray-300 font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-blue-600 hover:text-white hover:border-blue-500 transition-all duration-300 flex items-center gap-2 text-xs md:text-base shadow-lg hover:shadow-xl">
-                  <FaEnvelope />
+                
+                <ProgressBarLink 
+                  href={`/${lang}/contact`} 
+                  className="group relative overflow-hidden border-2 border-white text-white font-bold py-3 px-6 rounded-sm uppercase tracking-widest hover:bg-transparent hover:text-white hover:border-white transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm shadow-lg hover:shadow-white/30 transform hover:scale-105"
+                >
+                  <FaEnvelope className="transition-transform duration-300 group-hover:scale-110" />
                   {dict.hero.contactButton}
                 </ProgressBarLink>
               </div>
-              <ProgressBarLink href={`/${lang}/cv`} className="mt-4 flex justify-center items-center border-2 border-gray-300 text-gray-300 font-bold py-3 px-8 rounded-sm uppercase tracking-widest hover:bg-green-600 hover:text-white hover:border-green-500 transition-all duration-300 gap-2 text-xs md:text-base shadow-lg hover:shadow-xl">
-                <FaFileAlt />
-                {dict.hero.cvButton}
-              </ProgressBarLink>
+              
             </div>
 
             <div className="flex justify-center items-center">

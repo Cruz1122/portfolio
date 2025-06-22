@@ -5,7 +5,8 @@
     "description": "Je suis un <strong>développeur FullStack</strong> passionné par la construction de <strong>solutions robustes et scalables</strong>, spécialisé dans les systèmes d'administration et de logistique.",
     "projectsButton": "Projets",
     "contactButton": "Contactez-moi",
-    "cvButton": "Télécharger le CV"
+    "cvButton": "Télécharger le CV",
+    "aboutButton": "À propos de moi"
   },
   "navigation": {
     "home": "Accueil",
@@ -703,6 +704,23 @@
           ]
         }
       ]
+    }
+  },
+  "contactPage": {
+    "title": "Contactez-moi",
+    "subtitle": "Je suis toujours ouvert à discuter de nouveaux projets, idées créatives ou opportunités pour faire partie de votre vision. N'hésitez pas à me contacter.",
+    "directContactTitle": "Contact Direct",
+    "email": "jccpyt@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/juan-camilo-cruz-parra-190024371/",
+    "whatsappTitle": "Contactez-moi sur WhatsApp",
+    "form": {
+      "name": "Votre Nom",
+      "namePlaceholder": "Jean Dupont",
+      "email": "Votre Email",
+      "emailPlaceholder": "jean.dupont@email.com",
+      "message": "Votre Message",
+      "messagePlaceholder": "Bonjour Camilo, je voudrais discuter de...",
+      "submitButton": "Envoyer le Message"
     }
   }
 }

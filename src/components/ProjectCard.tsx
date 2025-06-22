@@ -5,6 +5,7 @@ import ProgressBarLink from './ProgressBarLink'
 import { useState } from 'react'
 import TechIcon, { TechName } from './TechIcon'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
+import { FaInfo, FaInfoCircle } from 'react-icons/fa'
 
 interface ProjectCardProps {
     title: string
@@ -62,8 +63,8 @@ export default function ProjectCard({
                         className="w-full border-2 border-white text-white py-2 px-4 rounded-sm tracking-widest hover:bg-white hover:text-black transition-colors duration-300 font-medium cursor-pointer"
                     >
                         
-                        <div className="flex items-center justify-center">
-                            <AiOutlineInfoCircle className="mr-2" />{viewInfo}
+                        <div className="flex items-center justify-center uppercase font-bold">
+                            <FaInfoCircle className="mr-2 w-3 h-3" />{viewInfo}
                         </div>
                     </button>
                 </div>

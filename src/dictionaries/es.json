@@ -5,7 +5,8 @@
     "description": "Soy un desarrollador <strong>FullStack</strong> con una pasión por construir soluciones <strong>robustas y escalables</strong>, especializándome en sistemas de administración y logística.",
     "projectsButton": "Proyectos",
     "contactButton": "Contáctame",
-    "cvButton": "Descargar CV"
+    "cvButton": "Descargar CV",
+    "aboutButton": "Sobre mí"
   },
   "navigation": {
     "home": "Inicio",
@@ -703,6 +704,23 @@
           ]
         }
       ]
+    }
+  },
+  "contactPage": {
+    "title": "Contacto",
+    "subtitle": "Siempre estoy abierto a discutir nuevos proyectos, ideas creativas o oportunidades para formar parte de tu visión. No dudes en contactarme.",
+    "directContactTitle": "Contacto Directo",
+    "email": "jccpyt@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/juan-camilo-cruz-parra-190024371/",
+    "whatsappTitle": "Contáctame en WhatsApp",
+    "form": {
+      "name": "Tu Nombre",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Tu Email",
+      "emailPlaceholder": "juan.perez@email.com",
+      "message": "Tu Mensaje",
+      "messagePlaceholder": "Hola Camilo, me gustaría hablar sobre...",
+      "submitButton": "Enviar Mensaje"
     }
   }
 }
