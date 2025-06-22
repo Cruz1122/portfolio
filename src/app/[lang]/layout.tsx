@@ -18,7 +18,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// This allows Next.js to know all the languages you support
 export async function generateStaticParams() {
   return i18n.locales.map(locale => ({ lang: locale }));
 }
@@ -30,7 +29,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params, // The 'lang' parameter is passed here
+  params,
 }: Readonly<{
   children: React.ReactNode;
   params: Promise<{ lang: any }>;

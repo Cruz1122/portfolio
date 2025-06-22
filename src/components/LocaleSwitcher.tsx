@@ -1,4 +1,3 @@
-// src/components/LocaleSwitcher.tsx
 'use client'
 
 import ProgressBarLink from './ProgressBarLink'
@@ -10,7 +9,6 @@ import Image from 'next/image'
 export default function LocaleSwitcher() {
     const pathName = usePathname()
 
-    // Extract the current locale from the URL
     const currentLocale = (pathName.split('/')[1] || i18n.defaultLocale) as typeof i18n.locales[number]
 
     const redirectedPathName = (locale: string) => {

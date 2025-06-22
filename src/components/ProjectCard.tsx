@@ -4,8 +4,7 @@ import Image from 'next/image'
 import ProgressBarLink from './ProgressBarLink'
 import { useState } from 'react'
 import TechIcon, { TechName } from './TechIcon'
-import { AiOutlineInfoCircle } from 'react-icons/ai'
-import { FaInfo, FaInfoCircle } from 'react-icons/fa'
+import { FaInfoCircle } from 'react-icons/fa'
 
 interface ProjectCardProps {
     title: string
@@ -40,7 +39,6 @@ export default function ProjectCard({
 
     return (
         <>
-            {/* Card con foto, título y botón */}
             <div className="relative border border-white/20 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/20">
                 <div className="absolute top-2 left-2 z-10 flex gap-2">
                     {highlightedTags.map(tag => (
@@ -70,19 +68,15 @@ export default function ProjectCard({
                 </div>
             </div>
 
-            {/* Modal con fondo difuminado */}
             {isModalOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-                    {/* Fondo difuminado */}
                     <div 
                         className="absolute inset-0 bg-black/90 backdrop-blur-sm"
                         onClick={() => setIsModalOpen(false)}
                         onKeyDown={(e) => e.key === 'Escape' && setIsModalOpen(false)}
                     />
                     
-                    {/* Contenido del modal */}
                     <div className="relative border border-white/20 rounded-xl overflow-hidden max-w-6xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
-                        {/* Botón cerrar */}
                         <button
                             onClick={() => setIsModalOpen(false)}
                             className="absolute top-4 right-4 z-10 rounded-full hover:text-white cursor-pointer"
@@ -93,9 +87,7 @@ export default function ProjectCard({
                             </svg>
                         </button>
 
-                        {/* Layout de dos columnas */}
                         <div className="flex flex-col lg:flex-row">
-                            {/* Columna izquierda - Imagen */}
                             <div className="lg:w-1/2">
                                 <Image
                                     src={imageUrl}
@@ -106,7 +98,6 @@ export default function ProjectCard({
                                 />
                             </div>
 
-                            {/* Columna derecha - Información */}
                             <div className="lg:w-1/2 p-8">
                                 <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
                                 
@@ -125,7 +116,6 @@ export default function ProjectCard({
                                     </div>
                                 </div>
 
-                                {/* Links */}
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     {liveUrl && (
                                         <ProgressBarLink 

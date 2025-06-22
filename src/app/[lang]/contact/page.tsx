@@ -1,6 +1,5 @@
 import { getDictionary } from '@/dictionaries';
 import { Locale } from '@/i18n.config';
-import Navbar from '@/components/Navbar';
 import { FaComment, FaEnvelope, FaLinkedin, FaUser, FaWhatsapp } from 'react-icons/fa';
 import Image from 'next/image';
 import LowPolyBackground from '@/components/LowPolyBackground';

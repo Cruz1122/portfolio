@@ -1,4 +1,3 @@
-// src/components/Navbar.tsx
 'use client'
 
 import ProgressBarLink from './ProgressBarLink'
@@ -7,7 +6,6 @@ import { usePathname } from 'next/navigation'
 import LocaleSwitcher from './LocaleSwitcher'
 import { Locale } from '@/i18n.config'
 
-// Define the shape of the navigation props
 interface NavigationProps {
   navigation: {
     home: string

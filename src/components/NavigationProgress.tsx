@@ -12,8 +12,5 @@ export default function NavigationProgress() {
         NProgress.done()
     }, [pathname, searchParams])
 
-    // Note: We don't need a NProgress.start() here because we will trigger it
-    // on each Link component manually for better control.
-
-    return null // This component renders nothing. Its only job is to run the effect.
+    return null
 }

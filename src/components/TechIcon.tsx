@@ -1,6 +1,5 @@
 'use client'
 
-// Icons remain the same
 import {
     SiVite, SiReact, SiNodedotjs, SiJavascript, SiExpress, SiSocketdotio, SiDocker,
     SiGithubactions, SiPrisma, SiMongoose, SiPostgresql, SiMongodb, SiTailwindcss,
@@ -12,7 +11,6 @@ import {
 import { AiOutlineJava } from 'react-icons/ai'
 import { TbBrandThreejs } from 'react-icons/tb'
 
-// Type definition updated to include all technology names from our dictionaries
 export type TechName =
     // Programming Languages
     | 'JavaScript' | 'TypeScript' | 'C#' | 'Python' | 'Java'
@@ -131,7 +129,6 @@ export default function TechIcon({ name, showLabel = false, className = "h-4 w-4
     };
 
     if (showLabel) {
-        // This is the "chip" view for the modal
         return (
             <button
                 type="button"

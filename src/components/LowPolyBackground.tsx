@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useMemo } from 'react'; // Importamos useMemo
+import { useRef, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
