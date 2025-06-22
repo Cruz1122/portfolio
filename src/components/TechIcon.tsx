@@ -12,18 +12,32 @@ import {
 import { AiOutlineJava } from 'react-icons/ai'
 import { TbBrandThreejs } from 'react-icons/tb'
 
-// Type definition remains the same
+// Type definition updated to include all technology names from our dictionaries
 export type TechName =
-    | 'Vite' | 'React' | 'Node.js' | 'JavaScript' | 'Express' | 'Socket.IO' | 'Docker'
-    | 'GitHub Actions' | 'Prisma' | 'Mongoose' | 'PostgreSQL' | 'MongoDB'
-    | 'Tailwind CSS' | 'Next.js' | 'TypeScript' | 'Framer Motion' | 'Three.js'
-    | 'i18n' | 'ASP.NET' | 'C#' | 'Entity Framework' | 'Bootstrap' | 'Angular'
-    | 'LoopBack' | 'MySQL' | 'MaterializeCSS' | 'Python' | 'Java' | 'Flask' | 'Git'
-    | 'GitHub' | 'AWS' | 'Vercel' | 'Nginx' | 'Netlify' | 'Render' | 'CSS' | 'HTML'
-    | 'Trello' | 'Jira' | 'Notion' | 'Figma' | 'Canva' | 'Prisma ORM' | 'Scrum'
-    | 'Kanban' | 'Waterfall' | 'Branching Strategies' | 'Pull Requests' | 'Merge Requests'
-    | 'CI/CD' | 'Teamwork' | 'Effective Communication' | 'Problem Solving'
-    | 'Continuous Learning' | 'Time Management' | 'ASP.NET Core';
+    // Programming Languages
+    | 'JavaScript' | 'TypeScript' | 'C#' | 'Python' | 'Java'
+    // Frameworks and Technologies
+    | 'React' | 'Next.js' | 'Node.js' | 'Angular' | 'ASP.NET' | 'Express' | 'Socket.IO' | 'Flask' | 'LoopBack'
+    // Databases and ORMs
+    | 'PostgreSQL' | 'MongoDB' | 'MySQL' | 'Prisma ORM' | 'Entity Framework' | 'Mongoose'
+    // DevOps and Tools
+    | 'Docker' | 'GitHub Actions' | 'Git' | 'Vite' | 'AWS' | 'Vercel' | 'Nginx' | 'Netlify' | 'Render'
+    // Styling and UI/UX
+    | 'Tailwind CSS' | 'Bootstrap' | 'MaterializeCSS' | 'Framer Motion' | 'Three.js' | 'CSS' | 'HTML'
+    // Methodologies
+    | 'Scrum' | 'Kanban' | 'Waterfall'
+    // Version Control
+    | 'GitHub' | 'Branching Strategies' | 'Pull Requests' | 'Merge Requests' | 'CI/CD'
+    // Project Management
+    | 'Trello' | 'Jira' | 'Notion' | 'Figma' | 'Canva'
+    // Soft Skills (English)
+    | 'Teamwork' | 'Effective Communication' | 'Problem Solving' | 'Continuous Learning' | 'Time Management'
+    // Soft Skills (Spanish)
+    | 'Trabajo en Equipo' | 'Comunicación Efectiva' | 'Resolución de Problemas' | 'Aprendizaje Continuo' | 'Gestión del Tiempo'
+    // Soft Skills (French)
+    | 'Travail en Équipe' | 'Communication Efficace' | 'Résolution de Problèmes' | 'Apprentissage Continu' | 'Gestion du Temps'
+    // Additional technologies
+    | 'ASP.NET Core' | 'Prisma';
 
 interface TechIconProps {
     name: TechName;
@@ -59,6 +73,8 @@ export default function TechIcon({ name, showLabel = false, className = "h-4 w-4
                 return <SiMongoose {...iconProps} />;
             case 'Prisma':
                 return <SiPrisma {...iconProps} />;
+            case 'Prisma ORM':
+                return <SiPrisma {...iconProps} />;
             case 'Docker':
                 return <SiDocker {...iconProps} />;
             case 'GitHub Actions':
@@ -73,9 +89,9 @@ export default function TechIcon({ name, showLabel = false, className = "h-4 w-4
                 return <TbBrandThreejs {...iconProps} />;
             case 'ASP.NET':
                 return <SiDotnet {...iconProps} />;
-            case 'Entity Framework':
-                return <SiDotnet {...iconProps} />;
             case 'ASP.NET Core':
+                return <SiDotnet {...iconProps} />;
+            case 'Entity Framework':
                 return <SiDotnet {...iconProps} />;
             case 'Angular':
                 return <SiAngular {...iconProps} />;
@@ -95,6 +111,8 @@ export default function TechIcon({ name, showLabel = false, className = "h-4 w-4
                 return <SiFlask {...iconProps} />;
             case 'Git':
                 return <SiGit {...iconProps} />;
+            case 'GitHub':
+                return <SiGithub {...iconProps} />;
             case 'AWS':
                 return <SiAmazonwebservices {...iconProps} />;
             case 'Vercel':
@@ -119,24 +137,25 @@ export default function TechIcon({ name, showLabel = false, className = "h-4 w-4
                 return <SiFigma {...iconProps} />;
             case 'Canva':
                 return <SiCanva {...iconProps} />;
-            case 'Prisma ORM':
-                return <SiPrisma {...iconProps} />;
             case 'Python':
                 return <SiPython {...iconProps} />;
-            case 'GitHub':
-                return <SiGithub {...iconProps} />;
             default:
-                return;
+                // Fallback for technologies without specific icons (including soft skills)
+                return <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">{name.charAt(0)}</span>
+                </div>;
         }
     }
 
     if (showLabel) {
         // This is the "chip" view for the modal
         return (
-            <div className="flex items-center gap-x-2 bg-white/20 text-white/80 text-sm font-medium px-3 py-1.5 rounded-full border border-white/20">
+            <button
+                type="button"
+                className="flex items-center gap-x-2 bg-white/20 text-white/80 text-sm font-medium px-3 py-1.5 rounded-full border border-white/20">
                 {renderIcon()}
                 <span>{name}</span>
-            </div>
+            </button>
         );
     }
 

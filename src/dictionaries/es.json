@@ -62,39 +62,647 @@
     "skillsTitle": "Mis Habilidades Principales",
     "programmingLanguages": {
       "title": "Lenguajes de Programación",
-      "skills": ["JavaScript", "TypeScript", "C#", "Python", "Java"]
+      "skills": [
+        {
+          "name": "JavaScript",
+          "abilities": [
+            "Sintaxis ES6+ Moderna",
+            "Operaciones Asíncronas (Promesas, Async/Await)",
+            "Manipulación del DOM",
+            "Programación Orientada a Objetos y Funcional",
+            "Módulos ES6, CommonJS y Bundlers (Vite, Webpack, etc.)",
+            "Testing con Jest",
+            "Desarrollo de APIs con Express y Node.js",
+            "Gestión de Bases de Datos con PostgreSQL y MongoDB",
+            "Renderizado del Lado del Servidor con Next.js",
+            "Diseño de APIs RESTful y Desarrollo de Middleware",
+            "Ecosistema React (Hooks, Context, Gestión de Estado)",
+            "Código Limpio y Patrones de Diseño"
+          ]
+        },
+        {
+          "name": "TypeScript",
+          "abilities": [
+            "Tipado Fuerte e Interfaces",
+            "Genéricos y Restricciones de Genéricos",
+            "Inferencia de Tipos Avanzada y Type Guards",
+            "Integración con React y Node.js",
+            "Desarrollo de APIs Type-Safe",
+            "Gestión de Estado Type-Safe",
+            "Testing con TypeScript y Jest"
+          ]
+        },
+        {
+          "name": "C#",
+          "abilities": [
+            "Desarrollo con .NET Framework y .NET Core",
+            "LINQ (Language Integrated Query)",
+            "Entity Framework para ORM",
+            "Construcción de APIs RESTful con ASP.NET",
+            "Aplicaciones Web ASP.NET Core y MVC",
+            "Programación Async/Await y Gestión de Tareas",
+            "Inyección de Dependencias y Contenedores IoC",
+            "Autenticación y Autorización con Identity",
+            "Optimización de Rendimiento y Caché",
+            "Scripting para Desarrollo de Videojuegos"
+          ]
+        },
+        {
+          "name": "Python",
+          "abilities": [
+            "Desarrollo de APIs con Flask",
+            "Estructuras de Datos y Algoritmos",
+            "Análisis Básico de Datos con Pandas",
+            "Visualización de Datos (Matplotlib, Seaborn)",
+            "Fundamentos de Machine Learning con Scikit-learn",
+            "Entornos Virtuales y Gestión de Paquetes",
+            "PyGame para Desarrollo de Juegos",
+            "Expresiones Regulares y Procesamiento de Texto",
+            "Teoría de Autómatas y Máquinas de Estados Finitos"
+          ]
+        },
+        {
+          "name": "Java",
+          "abilities": [
+            "Principios de Programación Orientada a Objetos",
+            "Java SE Core y Características Avanzadas",
+            "Multithreading y Concurrencia"
+          ]
+        }
+      ]
     },
     "frameworksTechnologies": {
       "title": "Frameworks y Tecnologías Principales",
-      "skills": ["React", "Next.js", "Node.js", "Angular", "ASP.NET", "Express", "Socket.IO", "Flask"]
+      "skills": [
+        {
+          "name": "React",
+          "abilities": [
+            "Arquitectura Basada en Componentes",
+            "Gestión de Estado (useState, useContext, Redux)",
+            "Hooks y Desarrollo de Custom Hooks",
+            "React Router para SPA",
+            "Optimización de Rendimiento (React.memo, useMemo)",
+            "Testing con Jest",
+            "Integración de APIs y Manejo de Errores",
+            "Integración con TypeScript",
+            "Code Splitting y Lazy Loading",
+            "Mejores Prácticas de Seguridad",
+            "Patrones Modernos de React y Arquitectura"
+          ]
+        },
+        {
+          "name": "Next.js",
+          "abilities": [
+            "Server-Side Rendering (SSR) y Static Site Generation (SSG)",
+            "App Router y Enrutamiento Basado en Archivos",
+            "API Routes",
+            "Middleware para Edge Functions",
+            "Optimización de Imágenes y Static Site Generation"
+          ]
+        },
+        {
+          "name": "Node.js",
+          "abilities": [
+            "Construcción de APIs RESTful",
+            "Framework Express.js",
+            "Operaciones Asíncronas del Sistema de Archivos",
+            "NPM",
+            "Integración de Bases de Datos y ORM/ODM",
+            "Autenticación y Seguridad (JWT, bcrypt)",
+            "Testing con Jest y Supertest",
+            "Optimización de Rendimiento y Caché",
+            "Arquitectura de Microservicios",
+            "Containerización con Docker",
+            "Arquitectura Orientada a Eventos",
+            "Seguridad de APIs y Configuración CORS"
+          ]
+        },
+        {
+          "name": "Angular",
+          "abilities": [
+            "Estructura de Componentes y Módulos",
+            "Two-way Data Binding",
+            "Inyección de Dependencias",
+            "Angular Router y Route Guards",
+            "Formularios Reactivos y Validación",
+            "HttpClient e Integración de APIs",
+            "Angular Material"
+          ]
+        },
+        {
+          "name": "ASP.NET",
+          "abilities": [
+            "Construcción de APIs Web",
+            "Arquitectura .NET Core y MVC",
+            "Razor Pages",
+            "Configuración de Middleware"
+          ]
+        },
+        {
+          "name": "Express",
+          "abilities": [
+            "Enrutamiento y Parámetros de Ruta",
+            "Implementación de Middleware",
+            "Manejo de Errores",
+            "Diseño y Desarrollo de APIs RESTful",
+            "Autenticación y Seguridad (JWT, bcrypt)",
+            "Integración de Bases de Datos y ORM",
+            "Manejo de Subida de Archivos (Multer)",
+            "Documentación de APIs (Swagger)",
+            "Testing con Jest y Supertest",
+            "Optimización de Rendimiento y Caché",
+            "Despliegue en Producción y Logging"
+          ]
+        },
+        {
+          "name": "Socket.IO",
+          "abilities": [
+            "Comunicación bidireccional en tiempo real",
+            "Arquitectura basada en eventos",
+            "Creación de aplicaciones de chat",
+            "Notificaciones en vivo",
+            "Integración con Express.js y React",
+            "Dashboards y Analytics en tiempo real",
+            "Despliegue en Producción y Configuración SSL",
+            "Mapas en tiempo real, Geolocalización y Seguimiento"
+          ]
+        },
+        {
+          "name": "Flask",
+          "abilities": [
+            "Micro-framework para servicios web",
+            "Enrutamiento y blueprints",
+            "Desarrollo de APIs RESTful"
+          ]
+        }
+      ]
     },
     "databases": {
-      "title": "Bases de Datos",
-      "skills": ["PostgreSQL", "MongoDB", "MySQL", "Prisma ORM", "Entity Framework", "Mongoose"]
+      "title": "Bases de Datos y ORMs",
+      "skills": [
+        {
+          "name": "PostgreSQL",
+          "abilities": [
+            "Consultas Complejas y Joins",
+            "Procedimientos Almacenados y Triggers",
+            "Modelado de Datos y Normalización",
+            "Optimización de Rendimiento",
+            "Administración de Bases de Datos y Gestión de Usuarios",
+            "Optimización de Consultas y Estrategia de Índices",
+            "Integración de ORM y Herramientas de Migración"
+          ]
+        },
+        {
+          "name": "MongoDB",
+          "abilities": [
+            "Modelo de documentos NoSQL",
+            "Mongoose para ODM",
+            "Pipeline de Agregación",
+            "Diseño de Esquemas",
+            "Modelado de Documentos y Relaciones de Datos",
+            "Estrategia de Índices y Optimización de Consultas"
+          ]
+        },
+        {
+          "name": "MySQL",
+          "abilities": [
+            "Diseño de Bases de Datos Relacionales",
+            "Optimización de Consultas",
+            "Gestión de Índices",
+            "Procedimientos Almacenados y Funciones",
+            "Administración de Bases de Datos y Gestión de Usuarios",
+            "Monitoreo de Rendimiento y Ajuste",
+            "Integración de ORM y Herramientas de Migración"
+          ]
+        },
+        {
+          "name": "Prisma ORM",
+          "abilities": [
+            "Definición Declarativa de Esquemas",
+            "Consultas Type-Safe de Bases de Datos",
+            "Gestión de Migraciones",
+            "Integración con TypeScript",
+            "Modelado de Esquemas y Relaciones",
+            "API de Prisma Client y Construcción de Consultas",
+            "Database Seeding y Configuración de Entornos",
+            "Optimización de Rendimiento y Connection Pooling",
+            "Estrategias de Testing y Mocking",
+            "Desarrollo de APIs y Microservicios",
+            "Integración de Aplicaciones Full-Stack"
+          ]
+        },
+        {
+          "name": "Entity Framework",
+          "abilities": [
+            "Enfoques Code-First y Database-First",
+            "LINQ to Entities",
+            "Migraciones",
+            "Lazy y Eager Loading"
+          ]
+        },
+        {
+          "name": "Mongoose",
+          "abilities": [
+            "Validación de Esquemas",
+            "Modelos y Middleware",
+            "Población de documentos",
+            "Construcción de Consultas",
+            "Diseño de Esquemas y Modelado de Datos",
+            "Referencias y Documentos Embebidos",
+            "Validadores Personalizados y Manejo de Errores",
+            "Integración con Express.js y Node.js",
+            "Estrategias de Testing y Mocking"
+          ]
+        }
+      ]
     },
     "devOps": {
-    "title": "DevOps y Herramientas",
-    "skills": ["Docker", "GitHub Actions", "Git", "Vite", "AWS", "Vercel", "Nginx", "Netlify", "Render"]
+      "title": "DevOps y Herramientas",
+      "skills": [
+        {
+          "name": "Docker",
+          "abilities": [
+            "Containerización y Gestión de Imágenes",
+            "Docker Compose y Aplicaciones Multi-contenedor",
+            "Optimización de Dockerfile",
+            "Conceptos Básicos de Orquestación de Contenedores",
+            "Configuración de Entornos de Desarrollo",
+            "Estrategias de Despliegue en Producción",
+            "Gestión de Volúmenes y Persistencia de Datos",
+            "Configuración de Red y Descubrimiento de Servicios",
+            "Integración con Pipelines CI/CD"
+          ]
+        },
+        {
+          "name": "GitHub Actions",
+          "abilities": [
+            "Automatización de Workflows y CI/CD",
+            "Configuración YAML y Sintaxis",
+            "Dependencias de Jobs y Ejecución Paralela",
+            "Variables de Entorno y Gestión de Secretos",
+            "Acciones Personalizadas y Workflows Reutilizables",
+            "Estrategias de Despliegue y Entornos",
+            "Integración con Servicios Externos"
+          ]
+        },
+        {
+          "name": "Git",
+          "abilities": [
+            "Control de Versiones y Gestión de Repositorios",
+            "Estrategias de Branching y Merging",
+            "Historial de Commits y Operaciones Rebase",
+            "Resolución de Conflictos y Herramientas de Merge",
+            "Operaciones de Repositorios Remotos",
+            "Comandos Avanzados de Git y Alias",
+            "Seguridad y Control de Acceso"
+          ]
+        },
+        {
+          "name": "Vite",
+          "abilities": [
+            "Configuración y Optimización de Build Tools",
+            "Hot Module Replacement (HMR)",
+            "Variables de Entorno y Configuración",
+            "Optimización de Build de Producción",
+            "Integración con Frameworks (React, Vue, etc.)",
+            "Configuración del Servidor de Desarrollo"
+          ]
+        },
+        {
+          "name": "AWS",
+          "abilities": [
+            "Gestión de Instancias EC2 y Auto Scaling",
+            "Almacenamiento S3 y Entrega de Contenido",
+            "Servicios de Base de Datos RDS y Gestión",
+            "Optimización de Costos y Gestión de Recursos"
+          ]
+        },
+        {
+          "name": "Vercel",
+          "abilities": [
+            "Despliegue y Hosting de Frontend",
+            "Variables de Entorno y Configuración",
+            "Dominios Personalizados y Gestión SSL"
+          ]
+        },
+        {
+          "name": "Nginx",
+          "abilities": [
+            "Configuración y Optimización de Servidor Web",
+            "Reverse Proxy y Load Balancing",
+            "Servicio de Archivos Estáticos y Caché",
+            "Reescritura de URLs y Reglas de Redirección",
+            "Gestión de Logs y Monitoreo",
+            "Ajuste de Rendimiento y Gestión de Recursos",
+            "Integración con Servidores de Aplicaciones"
+          ]
+        },
+        {
+          "name": "Netlify",
+          "abilities": [
+            "Despliegue y Hosting de Sitios Estáticos",
+            "Despliegue Continuo e Integración Git",
+            "Variables de Entorno y Configuración de Build",
+            "Optimización de Rendimiento y CDN",
+            "Colaboración en Equipo y Gestión de Acceso"
+          ]
+        },
+        {
+          "name": "Render",
+          "abilities": [
+            "Despliegue y Hosting en Plataforma Cloud",
+            "Servicios de Contenedores y Sitios Estáticos",
+            "Hosting y Gestión de Bases de Datos",
+            "Variables de Entorno y Configuración",
+            "Auto-deploy desde Repositorios Git",
+            "Health Checks y Monitoreo",
+            "Colaboración en Equipo y Control de Acceso"
+          ]
+        }
+      ]
     },
     "styling": {
       "title": "Estilos y UI/UX",
-      "skills": ["Tailwind CSS", "Bootstrap", "MaterializeCSS", "Framer Motion", "Three.js", "CSS", "HTML"]
+      "skills": [
+        {
+          "name": "Tailwind CSS",
+          "abilities": [
+            "Framework CSS Utility-First",
+            "Diseño Responsivo y Enfoque Mobile-First",
+            "Configuración Personalizada y Construcción de Temas",
+            "Estilizado de Componentes y Gestión de Layout",
+            "Implementación de Modo Oscuro"
+          ]
+        },
+        {
+          "name": "Bootstrap",
+          "abilities": [
+            "Sistema de Grid Responsivo y Layout",
+            "Biblioteca de Componentes y Elementos UI",
+            "Plugins JavaScript e Interacciones",
+            "Personalización y Tematización",
+            "Características de Accesibilidad",
+            "Compatibilidad Cross-Browser"
+          ]
+        },
+        {
+          "name": "MaterializeCSS",
+          "abilities": [
+            "Componentes de Material Design",
+            "Sistema de Grid Responsivo y Layout",
+            "Sistema de Colores y Tematización",
+            "Elementos de Formulario y Validación",
+            "Enfoque de Diseño Mobile-First"
+          ]
+        },
+        {
+          "name": "Framer Motion",
+          "abilities": [
+            "Biblioteca de Animaciones para React",
+            "Transiciones de Página y Animaciones de Layout",
+            "Física de Spring y Funciones de Easing",
+            "Orquestación y Secuenciación de Animaciones",
+            "Optimización de Rendimiento y Code Splitting"
+          ]
+        },
+        {
+          "name": "Three.js",
+          "abilities": [
+            "Gráficos 3D y Renderizado WebGL",
+            "Carga y Manipulación de Modelos 3D",
+            "Sistemas de Animación y Keyframes",
+            "Sistemas de Iluminación y Materiales",
+            "Controles de Cámara y Gestión de Escenas"
+          ]
+        },
+        {
+          "name": "CSS",
+          "abilities": [
+            "Diseño de Estilos y Layout",
+            "Diseño Responsivo y Media Queries",
+            "Layouts CSS Grid y Flexbox",
+            "Animaciones y Transiciones",
+            "Propiedades CSS Personalizadas y Variables",
+            "Compatibilidad de Navegadores"
+          ]
+        },
+        {
+          "name": "HTML",
+          "abilities": [
+            "Markup Semántico y Estructura",
+            "Accesibilidad y Atributos ARIA",
+            "Elementos de Formulario y Validación",
+            "Optimización SEO y Meta Tags",
+            "Compatibilidad Cross-Browser",
+            "Estructura de Documentos y Organización"
+          ]
+        }
+      ]
     },
     "methodologies": {
       "title": "Metodologías Ágiles",
-      "skills": ["Scrum", "Kanban", "Cascada"]
+      "skills": [
+        {
+          "name": "Scrum",
+          "abilities": [
+            "Planificación de Sprints y Gestión de Backlog",
+            "Daily Standups y Coordinación de Equipo",
+            "Sprint Reviews y Retrospectivas",
+            "Creación de User Stories y Estimación"
+          ]
+        },
+        {
+          "name": "Kanban",
+          "abilities": [
+            "Gestión Visual de Flujo de Trabajo",
+            "Límites WIP y Optimización de Flujo",
+            "Diseño y Mantenimiento de Tablero Kanban",
+            "Análisis de Lead Time y Cycle Time"
+          ]
+        },
+        {
+          "name": "Waterfall",
+          "abilities": [
+            "Fases Secuenciales de Proyecto",
+            "Planificación Detallada y Documentación",
+            "Seguimiento de Hitos y Entregables",
+            "Control de Cambios y Gestión de Riesgos",
+            "Revisiones Formales y Aprobaciones"
+          ]
+        }
+      ]
     },
     "versionControl": {
       "title": "Control de Versiones",
-      "skills": ["Git", "GitHub", "Branching Strategies", "Pull Requests", "Merge Requests", "CI/CD"]
+      "skills": [
+        {
+          "name": "Git",
+          "abilities": [
+            "Gestión e Inicialización de Repositorios",
+            "Análisis de Historial de Commits y Log",
+            "Área de Staging y Directorio de Trabajo",
+            "Creación y Cambio de Branches",
+            "Operaciones de Merge y Rebase",
+            "Resolución de Conflictos y Resolución"
+          ]
+        },
+        {
+          "name": "GitHub",
+          "abilities": [
+            "Gestión de Repositorios Remotos",
+            "Workflows de Desarrollo Colaborativo",
+            "Seguimiento de Issues y Gestión de Proyectos",
+            "Code Review y Discusión",
+            "GitHub Actions",
+            "Seguridad de Repositorios y Control de Acceso"
+          ]
+        },
+        {
+          "name": "Branching Strategies",
+          "abilities": [
+            "Git Flow y Feature Branching",
+            "Desarrollo Trunk-Based",
+            "Hotfix y Correcciones de Emergencia",
+            "Protección de Branches y Políticas",
+            "Convenciones de Nomenclatura de Branches"
+          ]
+        },
+        {
+          "name": "Pull Requests",
+          "abilities": [
+            "Gestión del Proceso de Code Review",
+            "Integración de Testing Automatizado",
+            "Actualizaciones de Documentación",
+            "Comentarios de Review y Discusiones",
+            "Workflows de Aprobación",
+            "Selección de Estrategia de Merge"
+          ]
+        },
+        {
+          "name": "Merge Requests",
+          "abilities": [
+            "Code Quality Gates",
+            "Integración de Pipeline",
+            "Asignación de Review y Notificaciones",
+            "Resolución de Conflictos de Merge",
+            "Squash y Fast-Forward Merges"
+          ]
+        },
+        {
+          "name": "CI/CD",
+          "abilities": [
+            "Pipelines de Integración Continua",
+            "Testing Automatizado y Quality Gates",
+            "Automatización de Despliegue",
+            "Gestión de Entornos",
+            "Gestión de Build y Release",
+            "Estrategias de Monitoreo y Rollback"
+          ]
+        }
+      ]
     },
     "projectManagement": {
       "title": "Gestión de Proyectos",
-      "skills": ["Trello", "Jira", "Notion", "Figma", "Canva"]
+      "skills": [
+        {
+          "name": "Trello",
+          "abilities": [
+            "Gestión de Tableros de Proyecto",
+            "Asignación y Seguimiento de Tareas",
+            "Colaboración en Equipo",
+            "Monitoreo de Progreso"
+          ]
+        },
+        {
+          "name": "Jira",
+          "abilities": [
+            "Gestión Ágil de Proyectos",
+            "Seguimiento de Issues y Gestión de Bugs",
+            "Planificación de Sprints y Gestión de Backlog",
+            "Configuración Masiva de Issues"
+          ]
+        },
+        {
+          "name": "Notion",
+          "abilities": [
+            "Documentación y Gestión del Conocimiento",
+            "Creación y Gestión de Bases de Datos",
+            "Organización de Espacios de Trabajo en Equipo"
+          ]
+        },
+        {
+          "name": "Figma",
+          "abilities": [
+            "Diseño UI/UX y Prototipado",
+            "Gestión de Sistemas de Diseño",
+            "Prototipos Interactivos"
+          ]
+        },
+        {
+          "name": "Canva",
+          "abilities": [
+            "Diseño Gráfico y Branding",
+            "Creación y Personalización de Plantillas",
+            "Diseño de Presentaciones",
+            "Gestión de Activos de Marca del Equipo"
+          ]
+        }
+      ]
     },
     "softSkills": {
       "title": "Habilidades Blandas",
-      "skills": ["Trabajo en Equipo", "Comunicación Efectiva", "Resolución de Problemas", "Aprendizaje Continuo", "Gestión del Tiempo"]
+      "skills": [
+        {
+          "name": "Trabajo en Equipo",
+          "abilities": [
+            "Resolución Colaborativa de Problemas",
+            "Coordinación de Equipos Cross-funcionales",
+            "Resolución de Conflictos",
+            "Apoyo a Miembros del Equipo",
+            "Logro de Objetivos Compartidos"
+          ]
+        },
+        {
+          "name": "Comunicación Efectiva",
+          "abilities": [
+            "Expresión Clara Verbal y Escrita",
+            "Escucha Activa y Feedback",
+            "Habilidades de Presentación",
+            "Construcción de Relaciones Interpersonales",
+            "Comunicación Cross-cultural"
+          ]
+        },
+        {
+          "name": "Resolución de Problemas",
+          "abilities": [
+            "Pensamiento Analítico",
+            "Desarrollo de Soluciones Creativas",
+            "Análisis de Causa Raíz",
+            "Toma de Decisiones Bajo Presión",
+            "Enfoque Innovador a los Desafíos"
+          ]
+        },
+        {
+          "name": "Aprendizaje Continuo",
+          "abilities": [
+            "Desarrollo Autodirigido de Habilidades",
+            "Adaptación a Nuevas Tecnologías",
+            "Compartir Conocimiento y Mentoring",
+            "Mantenerse Actualizado con Tendencias de la Industria",
+            "Abrazar Feedback y Crecimiento"
+          ]
+        },
+        {
+          "name": "Gestión del Tiempo",
+          "abilities": [
+            "Establecimiento de Prioridades y Planificación",
+            "Gestión de Deadlines",
+            "Organización y Programación de Tareas",
+            "Mantenimiento del Balance Trabajo-Vida",
+            "Asignación Eficiente de Recursos"
+          ]
+        }
+      ]
     }
   }
 }
