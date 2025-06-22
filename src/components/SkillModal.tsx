@@ -49,8 +49,8 @@ export default function SkillModal({ skill, onClose }: Readonly<SkillModalProps>
                             <TechIcon name={skill.name as any} showLabel={false} className="h-30 w-30 text-white/80" />
                         </div>
                         <ul className="space-y-2 list-disc list-inside text-white/80">
-                            {skill.abilities.map((ability, index) => (
-                                <li key={index}>{ability}</li>
+                            {skill.abilities.map((ability) => (
+                                <li key={ability}>{ability}</li>
                             ))}
                         </ul>
                     </motion.div>

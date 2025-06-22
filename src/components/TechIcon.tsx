@@ -49,103 +49,86 @@ export default function TechIcon({ name, showLabel = false, className = "h-4 w-4
     // We define the icon size here
     const iconProps = { className: className };
 
+    // Icon mapping object instead of switch statement
+    const iconMap: Record<TechName, React.ReactNode> = {
+        'React': <SiReact {...iconProps} />,
+        'Next.js': <SiNextdotjs {...iconProps} />,
+        'Node.js': <SiNodedotjs {...iconProps} />,
+        'JavaScript': <SiJavascript {...iconProps} />,
+        'TypeScript': <SiTypescript {...iconProps} />,
+        'Express': <SiExpress {...iconProps} />,
+        'Socket.IO': <SiSocketdotio {...iconProps} />,
+        'PostgreSQL': <SiPostgresql {...iconProps} />,
+        'MongoDB': <SiMongodb {...iconProps} />,
+        'Mongoose': <SiMongoose {...iconProps} />,
+        'Prisma': <SiPrisma {...iconProps} />,
+        'Prisma ORM': <SiPrisma {...iconProps} />,
+        'Docker': <SiDocker {...iconProps} />,
+        'GitHub Actions': <SiGithubactions {...iconProps} />,
+        'Vite': <SiVite {...iconProps} />,
+        'Tailwind CSS': <SiTailwindcss {...iconProps} />,
+        'Framer Motion': <SiFramer {...iconProps} />,
+        'Three.js': <TbBrandThreejs {...iconProps} />,
+        'ASP.NET': <SiDotnet {...iconProps} />,
+        'ASP.NET Core': <SiDotnet {...iconProps} />,
+        'Entity Framework': <SiDotnet {...iconProps} />,
+        'Angular': <SiAngular {...iconProps} />,
+        'MySQL': <SiMysql {...iconProps} />,
+        'LoopBack': <SiLoopback {...iconProps} />,
+        'MaterializeCSS': <SiCss3 {...iconProps} />,
+        'Bootstrap': <SiBootstrap {...iconProps} />,
+        'C#': <span className="text-white font-bold text-center text-xs m-0 p-0 flex items-center justify-center" style={{ width: '12px', height: '12px' }}>C#</span>,
+        'Java': <AiOutlineJava {...iconProps} />,
+        'Flask': <SiFlask {...iconProps} />,
+        'Git': <SiGit {...iconProps} />,
+        'GitHub': <SiGithub {...iconProps} />,
+        'AWS': <SiAmazonwebservices {...iconProps} />,
+        'Vercel': <SiVercel {...iconProps} />,
+        'Nginx': <SiNginx {...iconProps} />,
+        'Netlify': <SiNetlify {...iconProps} />,
+        'Render': <SiRender {...iconProps} />,
+        'CSS': <SiCss3 {...iconProps} />,
+        'HTML': <SiHtml5 {...iconProps} />,
+        'Trello': <SiTrello {...iconProps} />,
+        'Jira': <SiJira {...iconProps} />,
+        'Notion': <SiNotion {...iconProps} />,
+        'Figma': <SiFigma {...iconProps} />,
+        'Canva': <SiCanva {...iconProps} />,
+        'Python': <SiPython {...iconProps} />,
+        // Soft skills and methodologies use fallback
+        'Scrum': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">S</span></div>,
+        'Kanban': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">K</span></div>,
+        'Waterfall': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">W</span></div>,
+        'Branching Strategies': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">B</span></div>,
+        'Pull Requests': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">P</span></div>,
+        'Merge Requests': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">M</span></div>,
+        'CI/CD': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">C</span></div>,
+        'Teamwork': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">T</span></div>,
+        'Effective Communication': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">E</span></div>,
+        'Problem Solving': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">P</span></div>,
+        'Continuous Learning': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">C</span></div>,
+        'Time Management': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">T</span></div>,
+        // Spanish soft skills
+        'Trabajo en Equipo': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">T</span></div>,
+        'Comunicación Efectiva': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">C</span></div>,
+        'Resolución de Problemas': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">R</span></div>,
+        'Aprendizaje Continuo': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">A</span></div>,
+        'Gestión del Tiempo': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">G</span></div>,
+        // French soft skills
+        'Travail en Équipe': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">T</span></div>,
+        'Communication Efficace': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">C</span></div>,
+        'Résolution de Problèmes': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">R</span></div>,
+        'Apprentissage Continu': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">A</span></div>,
+        'Gestion du Temps': <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center"><span className="text-white text-xs font-bold">G</span></div>,
+    };
+
     const renderIcon = () => {
-        switch (name) {
-            case 'React':
-                return <SiReact {...iconProps} />;
-            case 'Next.js':
-                return <SiNextdotjs {...iconProps} />;
-            case 'Node.js':
-                return <SiNodedotjs {...iconProps} />;
-            case 'JavaScript':
-                return <SiJavascript {...iconProps} />;
-            case 'TypeScript':
-                return <SiTypescript {...iconProps} />;
-            case 'Express':
-                return <SiExpress {...iconProps} />;
-            case 'Socket.IO':
-                return <SiSocketdotio {...iconProps} />;
-            case 'PostgreSQL':
-                return <SiPostgresql {...iconProps} />;
-            case 'MongoDB':
-                return <SiMongodb {...iconProps} />;
-            case 'Mongoose':
-                return <SiMongoose {...iconProps} />;
-            case 'Prisma':
-                return <SiPrisma {...iconProps} />;
-            case 'Prisma ORM':
-                return <SiPrisma {...iconProps} />;
-            case 'Docker':
-                return <SiDocker {...iconProps} />;
-            case 'GitHub Actions':
-                return <SiGithubactions {...iconProps} />;
-            case 'Vite':
-                return <SiVite {...iconProps} />;
-            case 'Tailwind CSS':
-                return <SiTailwindcss {...iconProps} />;
-            case 'Framer Motion':
-                return <SiFramer {...iconProps} />;
-            case 'Three.js':
-                return <TbBrandThreejs {...iconProps} />;
-            case 'ASP.NET':
-                return <SiDotnet {...iconProps} />;
-            case 'ASP.NET Core':
-                return <SiDotnet {...iconProps} />;
-            case 'Entity Framework':
-                return <SiDotnet {...iconProps} />;
-            case 'Angular':
-                return <SiAngular {...iconProps} />;
-            case 'MySQL':
-                return <SiMysql {...iconProps} />;
-            case 'LoopBack':
-                return <SiLoopback {...iconProps} />;
-            case 'MaterializeCSS':
-                return <SiCss3 {...iconProps} />;
-            case 'Bootstrap':
-                return <SiBootstrap {...iconProps} />;
-            case 'C#':
-                return <span className="text-white font-bold text-center text-xs m-0 p-0 flex items-center justify-center" style={{ width: '12px', height: '12px' }}>C#</span>;
-            case 'Java':
-                return <AiOutlineJava {...iconProps} />;
-            case 'Flask':
-                return <SiFlask {...iconProps} />;
-            case 'Git':
-                return <SiGit {...iconProps} />;
-            case 'GitHub':
-                return <SiGithub {...iconProps} />;
-            case 'AWS':
-                return <SiAmazonwebservices {...iconProps} />;
-            case 'Vercel':
-                return <SiVercel {...iconProps} />;
-            case 'Nginx':
-                return <SiNginx {...iconProps} />;
-            case 'Netlify':
-                return <SiNetlify {...iconProps} />;
-            case 'Render':
-                return <SiRender {...iconProps} />;
-            case 'CSS':
-                return <SiCss3 {...iconProps} />;
-            case 'HTML':
-                return <SiHtml5 {...iconProps} />;
-            case 'Trello':
-                return <SiTrello {...iconProps} />;
-            case 'Jira':
-                return <SiJira {...iconProps} />;
-            case 'Notion':
-                return <SiNotion {...iconProps} />;
-            case 'Figma':
-                return <SiFigma {...iconProps} />;
-            case 'Canva':
-                return <SiCanva {...iconProps} />;
-            case 'Python':
-                return <SiPython {...iconProps} />;
-            default:
-                // Fallback for technologies without specific icons (including soft skills)
-                return <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">{name.charAt(0)}</span>
-                </div>;
-        }
-    }
+        return iconMap[name] || (
+            <div className="w-4 h-4 bg-white/20 rounded flex items-center justify-center">
+                <span className="text-white text-xs font-bold">{name.charAt(0)}</span>
+            </div>
+        );
+    };
 
     if (showLabel) {
         // This is the "chip" view for the modal
