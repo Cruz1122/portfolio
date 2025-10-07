@@ -24,8 +24,8 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Camilo Cruz | Frontend Developer",
-  description: "Portfolio of Camilo Cruz, a frontend web developer.",
+  title: "Camilo Cruz | Fullstack Developer",
+  description: "Portfolio of Camilo Cruz, a fullstack web developer.",
 };
 
 export default async function RootLayout({
