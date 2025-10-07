@@ -133,9 +133,6 @@
           "abilities": [
             "Desarrollo de APIs con Flask",
             "Estructuras de Datos y Algoritmos",
-            "Análisis Básico de Datos con Pandas",
-            "Visualización de Datos (Matplotlib, Seaborn)",
-            "Fundamentos de Machine Learning con Scikit-learn",
             "Entornos Virtuales y Gestión de Paquetes",
             "PyGame para Desarrollo de Juegos",
             "Expresiones Regulares y Procesamiento de Texto",
