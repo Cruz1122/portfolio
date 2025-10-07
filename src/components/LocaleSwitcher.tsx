@@ -20,7 +20,7 @@ export default function LocaleSwitcher() {
 
     return (
         <ul className="flex gap-x-3">
-            {i18n.locales.map(locale => {
+            {i18n.locales.filter(locale => locale !== 'fr').map(locale => {
                 const isSelected = locale === currentLocale
                 return (
                     <li key={locale}>
