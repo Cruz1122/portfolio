@@ -40,13 +40,13 @@ export default async function HomePage({
                   {dict.hero.aboutButton}
                 </ProgressBarLink>
 
-                <ProgressBarLink
+                {/* <ProgressBarLink
                   href={`/${lang}/cv`}
                   className="group relative overflow-hidden border-2 border-white text-white font-bold py-3 px-6 rounded-sm uppercase tracking-widest hover:bg-transparent hover:text-green-300 hover:border-green-300 transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm shadow-lg hover:shadow-green-400/30 transform hover:scale-105"
                 >
                   <FaFileAlt className="transition-transform duration-300 group-hover:rotate-6" />
                   {dict.hero.cvButton}
-                </ProgressBarLink>
+                </ProgressBarLink> */}
 
                 <ProgressBarLink 
                   href={`/${lang}/projects`} 

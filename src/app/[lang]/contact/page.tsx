@@ -51,7 +51,7 @@ export default async function ContactPage({ params }: Readonly<{ params: Promise
                             </h3>
                             <div className="flex justify-center">
                                 <Image
-                                    src="/images/whatsapp-qr-placeholder.png" // Reemplaza con tu QR real
+                                    src="/images/whatsapp-qr-placeholder.png" 
                                     alt="WhatsApp QR Code"
                                     width={120}
                                     height={120}
