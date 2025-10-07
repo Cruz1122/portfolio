@@ -3,7 +3,7 @@ import ProgressBarLink from '@/components/ProgressBarLink';
 import LowPolyBackground from '@/components/LowPolyBackground'; 
 import { getDictionary } from '@/dictionaries';
 import { Locale } from '@/i18n.config';
-import { FaEnvelope, FaFileAlt, FaFolderOpen, FaUser } from 'react-icons/fa';
+import { FaEnvelope, FaFolderOpen, FaUser } from 'react-icons/fa';
 
 export default async function HomePage({
   params,
