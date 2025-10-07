@@ -58,9 +58,9 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({ name, em
             <h2 style={{ ...headingStyle, fontSize: '20px' }}>Message Details:</h2>
 
             <ul style={{ ...textStyle, paddingLeft: '20px' }}>
-                <li><strong>Sender's Name:</strong> {name}</li>
+                <li><strong>Sender&apos;s Name:</strong> {name}</li>
                 <li>
-                    <strong>Sender's Email:</strong> <a href={`mailto:${email}`} style={linkStyle}>{email}</a>
+                    <strong>Sender&apos;s Email:</strong> <a href={`mailto:${email}`} style={linkStyle}>{email}</a>
                 </li>
             </ul>
 

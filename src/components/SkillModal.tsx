@@ -1,7 +1,7 @@
 'use client'
 
 import { motion, AnimatePresence } from 'framer-motion'
-import TechIcon from './TechIcon'
+import TechIcon, { type TechName } from "./TechIcon";
 
 interface Skill {
     name: string;
@@ -46,7 +46,7 @@ export default function SkillModal({ skill, onClose }: Readonly<SkillModalProps>
                         </button>
                         <div className="flex items-center gap-4 mb-6 flex-col gap-y-8">
                             <h1 className="text-4xl font-bold text-white text-center mx-auto">{skill.name}</h1>
-                            <TechIcon name={skill.name as any} showLabel={false} className="h-30 w-30 text-white/80" />
+                            <TechIcon name={skill.name as TechName} showLabel={false} className="h-30 w-30 text-white/80" />
                         </div>
                         <ul className="space-y-2 list-disc list-inside text-white/80">
                             {skill.abilities.map((ability) => (

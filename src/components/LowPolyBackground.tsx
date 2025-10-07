@@ -12,7 +12,7 @@ function AnimatedMesh() {
         if (geometryRef.current) {
             return geometryRef.current.attributes.position.clone();
         }
-    }, [geometryRef.current]);
+    }, []);
 
     useFrame((state) => {
         if (meshRef.current) {

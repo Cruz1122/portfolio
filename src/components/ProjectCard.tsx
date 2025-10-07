@@ -31,7 +31,6 @@ export default function ProjectCard({
     liveUrl, 
     codeUrl, 
     viewInfo,
-    closeInfo,
     viewCode,
     viewLive,
     desktopApp,

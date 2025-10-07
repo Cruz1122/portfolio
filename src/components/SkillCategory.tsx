@@ -1,4 +1,4 @@
-import TechIcon from "./TechIcon";
+import TechIcon, { type TechName } from "./TechIcon";
 
 interface Skill {
     name: string;
@@ -32,7 +32,7 @@ export default function SkillCategory({ title, skills, onSkillClick }: Readonly<
                         }}
                     >
                         <TechIcon
-                            name={skill.name as any}
+                            name={skill.name as TechName}
                             showLabel={true}
                         />
                     </div>

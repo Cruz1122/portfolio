@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { EmailTemplate } from '@/components/EmailTemplate';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const toEmail = 'jccpyt@gmail.com';
 
 export async function POST(req: Request) {
@@ -13,6 +12,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
       from: 'Portfolio Contact Form <onboarding@resend.dev>',
       to: [toEmail],
