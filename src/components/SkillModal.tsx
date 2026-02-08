@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import TechIcon, { type TechName } from "./TechIcon";
 
@@ -14,6 +15,13 @@ interface SkillModalProps {
 }
 
 export default function SkillModal({ skill, onClose }: Readonly<SkillModalProps>) {
+    useEffect(() => {
+        if (skill) {
+            document.body.classList.add('modal-open')
+            return () => document.body.classList.remove('modal-open')
+        }
+    }, [skill])
+
     return (
         <AnimatePresence>
             {skill && (

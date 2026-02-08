@@ -29,7 +29,7 @@
     "noAvailable": "No available",
     "projects": [
       {
-        "title": "AALIE (Algorithmic Analysis Live Interaction Expert)",
+        "title": "AALIE",
         "description": "Modern educational tool for analyzing the algorithmic complexity of <strong>pseudocode</strong> with <strong>interactive visualizations</strong> and <strong>automatic calculations</strong>. Includes <strong>real-time validation</strong>, <strong>best/worst/average case</strong> analysis, probabilistic models for average case, and recursive analysis with multiple methods (Master Theorem, Iteration, Recursion Tree, and Characteristic Equation). Main stack: <strong>Next.js + TypeScript</strong> (frontend) and <strong>FastAPI + Python</strong> (backend), with <strong>ANTLR4</strong> parser and modern UI with <strong>Tailwind</strong>.",
         "tags": ["Next.js", "TypeScript", "Python", "FastAPI", "ANTLR4", "Tailwind CSS", "Docker", "Monaco Editor", "KaTeX", "React Flow", "pnpm"],
         "highlightedTags": ["Next.js", "TypeScript", "FastAPI", "Docker", "Tailwind CSS"],
@@ -99,6 +99,7 @@
     "paragraph1": "Hello! I'm Camilo, a <strong>Full Stack developer</strong> with a deep passion for creating digital solutions that are not only <strong>functional and robust</strong> but also <strong>intuitive and user-friendly</strong>. My journey in the world of development began with a small passion for creating things; being able to mold objects and give them life to my liking. As I grew and learned, my passion for programming turned into a career dedicated to building <strong>digital solutions</strong> that positively impact society. My desire to keep learning and contributing to the community is stronger than ever.",
     "paragraph2": "I love <strong>challenges</strong> and am constantly learning new technologies to stay at the <strong>forefront of the industry</strong>. I believe the best applications are born from a combination of <strong>clean code</strong>, <strong>user-centered design</strong> and an <strong>effective collaboration</strong>.",
     "skillsTitle": "My Main Skills",
+    "skillsClickHint": "Click on a technology to see more details about what I can do.",
     "programmingLanguages": {
       "title": "Programming Languages",
       "skills": [
@@ -264,11 +265,25 @@
           ]
         },
         {
-          "name": "Flask",
+          "name": "FastAPI",
           "abilities": [
-            "Micro-framework for web services",
-            "Routing and blueprints",
-            "RESTful API development"
+            "Modern web framework for REST APIs",
+            "Routing and modules (routers)",
+            "Validation with Pydantic",
+            "ANTLR4 and parser integration",
+            "Automatic OpenAPI documentation",
+            "Deployment with Uvicorn and Docker containers"
+          ]
+        },
+        {
+          "name": "Ionic",
+          "abilities": [
+            "Hybrid apps with Ionic and Capacitor (iOS/Android/Web)",
+            "Ionic components and navigation",
+            "Integration with React and TypeScript",
+            "Responsive UI and light/dark mode",
+            "Real-time tracking and maps (MapLibre)",
+            "Native mobile user experience"
           ]
         }
       ]

@@ -24,6 +24,14 @@ body {
   color: var(--foreground);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
+body.modal-open [data-tech-tooltip] {
+  visibility: hidden !important;
+}
+
 #nprogress .bar {
   /* Cambia el color de la barra. Puedes usar cualquier color hexadecimal. */
   background: #fbfcfd !important; /* Un azul vibrante como ejemplo */

@@ -142,7 +142,7 @@ export default function TechIcon({ name, showLabel = false, className = "h-4 w-4
         return (
             <button
                 type="button"
-                className="flex items-center gap-x-2 bg-white/20 text-white/80 text-sm font-medium px-3 py-1.5 rounded-full border border-white/20">
+                className="flex items-center gap-x-2 bg-white/20 text-white/80 text-sm font-medium px-3 py-1.5 rounded-full border border-white/20 cursor-pointer">
                 {renderIcon()}
                 <span>{name}</span>
             </button>
@@ -152,7 +152,7 @@ export default function TechIcon({ name, showLabel = false, className = "h-4 w-4
     return (
         <div className="relative group flex justify-center">
             {renderIcon()}
-            <span className="absolute top-10 scale-0 transition-all rounded bg-black/80 p-2 text-xs text-white group-hover:scale-100 whitespace-nowrap">
+            <span data-tech-tooltip className="absolute top-10 scale-0 transition-all rounded bg-black/80 p-2 text-xs text-white group-hover:scale-100 whitespace-nowrap">
                 {name}
             </span>
         </div>

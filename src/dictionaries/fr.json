@@ -29,7 +29,7 @@
     "noAvailable": "Non disponible",
     "projects": [
       {
-        "title": "AALIE (Algorithmic Analysis Live Interaction Expert)",
+        "title": "AALIE",
         "description": "Outil éducatif moderne pour analyser la complexité algorithmique du <strong>pseudocode</strong> avec <strong>visualisations interactives</strong> et <strong>calculs automatiques</strong>. Inclut <strong>validation en temps réel</strong>, analyse de <strong>best/worst/average case</strong>, modèles probabilistes pour le cas moyen, et analyse récursive avec plusieurs méthodes (Théorème Maître, Itération, Arbre de Récursion et Équation Caractéristique). Stack principal : <strong>Next.js + TypeScript</strong> (frontend) et <strong>FastAPI + Python</strong> (backend), avec parser <strong>ANTLR4</strong> et UI moderne avec <strong>Tailwind</strong>.",
         "tags": ["Next.js", "TypeScript", "Python", "FastAPI", "ANTLR4", "Tailwind CSS", "Docker", "Monaco Editor", "KaTeX", "React Flow", "pnpm"],
         "highlightedTags": ["Next.js", "TypeScript", "FastAPI", "Docker", "Tailwind CSS"],
@@ -99,6 +99,7 @@
     "paragraph1": "Bonjour! Je suis Camilo, un développeur <strong>Full Stack</strong> passionné par la création de solutions digitales qui ne sont pas seulement <strong>fonctionnelles et robustes</strong>, mais aussi <strong>intuitives et utilisateurs</strong>. Mon parcours dans le monde du développement a commencé avec une petite passion pour la création de choses; pouvoir modeler des objets et leur donner vie à mon goût. Au fur et à mesure que j'ai grandi et appris, ma passion pour la programmation s'est transformée en une carrière dédiée à la construction de <strong>solutions digitales</strong> qui ont un impact positif sur la société. Ma volonté de continuer à apprendre et de contribuer à la communauté est plus forte que jamais.",
     "paragraph2": "J'aime les <strong>défis</strong> et je suis constamment à la recherche de nouvelles technologies pour rester à la <strong>pointe de l'industrie</strong>. Je crois que les meilleures applications naissent de la combinaison de <strong>code propre</strong>, <strong>design centré sur l'utilisateur</strong> et de <strong>collaboration efficace</strong>.",
     "skillsTitle": "Mes Compétences Principales",
+    "skillsClickHint": "Cliquez sur une technologie pour voir plus de détails sur ce que je sais faire.",
     "programmingLanguages": {
       "title": "Langages de Programmation",
       "skills": [
@@ -264,11 +265,25 @@
           ]
         },
         {
-          "name": "Flask",
+          "name": "FastAPI",
           "abilities": [
-            "Micro-framework pour services web",
-            "Routage et blueprints",
-            "Développement d'APIs RESTful"
+            "Micro-framework web moderne pour APIs REST",
+            "Routage et modules (routers)",
+            "Validation avec Pydantic",
+            "Intégration ANTLR4 et parsers",
+            "Documentation OpenAPI automatique",
+            "Déploiement avec Uvicorn et conteneurs Docker"
+          ]
+        },
+        {
+          "name": "Ionic",
+          "abilities": [
+            "Applications hybrides avec Ionic et Capacitor (iOS/Android/Web)",
+            "Composants et navigation Ionic",
+            "Intégration avec React et TypeScript",
+            "UI responsive et mode clair/sombre",
+            "Suivi temps réel et cartes (MapLibre)",
+            "Expérience utilisateur native mobile"
           ]
         }
       ]

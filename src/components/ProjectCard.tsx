@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import ProgressBarLink from './ProgressBarLink'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import TechIcon, { TechName } from './TechIcon'
 import { FaInfoCircle } from 'react-icons/fa'
 
@@ -39,6 +39,13 @@ export default function ProjectCard({
     highlightedTags
 }: Readonly<ProjectCardProps>) {
     const [isModalOpen, setIsModalOpen] = useState(false)
+
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.classList.add('modal-open')
+            return () => document.body.classList.remove('modal-open')
+        }
+    }, [isModalOpen])
 
     return (
         <>

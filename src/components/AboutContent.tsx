@@ -21,6 +21,7 @@ interface AboutPageData {
     paragraph1: string;
     paragraph2: string;
     skillsTitle: string;
+    skillsClickHint: string;
     programmingLanguages: SkillCategory;
     frameworksTechnologies: SkillCategory;
     databases: SkillCategory;
@@ -44,7 +45,7 @@ interface AboutContentProps {
 export default function AboutContent({ aboutPage, hero }: Readonly<AboutContentProps>) {
     const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
 
-    const { title, subtitle, paragraph1, paragraph2, skillsTitle, ...skillCategories } = aboutPage;
+    const { title, subtitle, paragraph1, paragraph2, skillsTitle, skillsClickHint, ...skillCategories } = aboutPage;
 
     // Convert the skill categories object to an array for easier mapping
     const categoriesArray = Object.values(skillCategories).filter(category => 
@@ -77,7 +78,8 @@ export default function AboutContent({ aboutPage, hero }: Readonly<AboutContentP
 
             {/* Skills Section */}
             <div className="mt-20">
-                <h2 className="text-3xl font-bold text-white text-center mb-12">{skillsTitle}</h2>
+                <h2 className="text-3xl font-bold text-white text-center mb-2">{skillsTitle}</h2>
+                <p className="text-sm text-white/60 text-center mb-12">{skillsClickHint}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                     {categoriesArray.map((category) => (
                         <SkillCategory
