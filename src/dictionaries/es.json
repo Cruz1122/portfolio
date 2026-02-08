@@ -29,6 +29,24 @@
     "noAvailable": "No disponible",
     "projects": [
       {
+        "title": "AALIE (Algorithmic Analysis Live Interaction Expert)",
+        "description": "Herramienta educativa moderna para analizar la complejidad algorítmica de <strong>pseudocódigo</strong> con <strong>visualizaciones interactivas</strong> y <strong>cálculos automáticos</strong>. Incluye <strong>validación en tiempo real</strong>, análisis de <strong>best/worst/average case</strong>, modelos probabilísticos para el caso promedio, y análisis recursivo con múltiples métodos (Teorema Maestro, Iteración, Árbol de Recursión y Ecuación Característica). Stack principal: <strong>Next.js + TypeScript</strong> (frontend) y <strong>FastAPI + Python</strong> (backend), con parser en <strong>ANTLR4</strong> y UI moderna con <strong>Tailwind</strong>.",
+        "tags": ["Next.js", "TypeScript", "Python", "FastAPI", "ANTLR4", "Tailwind CSS", "Docker", "Monaco Editor", "KaTeX", "React Flow", "pnpm"],
+        "highlightedTags": ["Next.js", "TypeScript", "FastAPI", "Docker", "Tailwind CSS"],
+        "imageUrl": "/images/projects/algorithmic-analysis.png",
+        "liveUrl": "https://algorithmic-analysis-web.vercel.app",
+        "codeUrl": "https://github.com/Cruz1122/algorithmic-analysis"
+      },
+      {
+        "title": "Rout2Me",
+        "description": "Plataforma integral de <strong>gestión y visualización de transporte público en tiempo real</strong>. Conecta pasajeros, conductores y administradores mediante una infraestructura basada en <strong>Supabase</strong> y aplicaciones cliente construidas con <strong>Ionic + React</strong>. Incluye rastreo en tiempo real, <strong>predicción de rutas/ETA</strong>, búsqueda inteligente de rutas y paraderos, y un panel administrativo con gestión de flota, editor de rutas, seguridad con roles (RBAC) y analíticas en vivo.",
+        "tags": ["Node.js", "TypeScript", "Ionic", "React", "Supabase", "pnpm"],
+        "highlightedTags": ["Node.js", "TypeScript", "Ionic", "React", "Supabase"],
+        "imageUrl": "/images/projects/rout2me.png",
+        "liveUrl": "#",
+        "codeUrl": "https://github.com/Cruz1122/rout2me"
+      },
+      {
         "title": "LogicSmart",
         "description": "Aplicación completa que permite a las empresas de distribución optimizar sus operaciones a través de <strong>microservicios</strong> para el manejo de usuarios, pedidos, inventario, geolocalización y reportes de entregas.",
         "tags": ["Vite", "React", "Node.js", "JavaScript", "Express", "Socket.IO", "Docker", "GitHub Actions", "Prisma", "Mongoose", "PostgreSQL", "MongoDB" ],

@@ -6,7 +6,7 @@ import {
     SiNextdotjs, SiFramer, SiTypescript, SiDotnet, SiAngular, SiLoopback,
     SiMysql, SiPython, SiFlask, SiGit, SiGithub, SiAmazonwebservices, SiVercel,
     SiNginx, SiNetlify, SiRender, SiCss3, SiHtml5, SiTrello, SiJira, SiNotion, SiFigma, SiCanva,
-    SiBootstrap, SiPythonanywhere
+    SiBootstrap, SiPythonanywhere, SiFastapi, SiPnpm, SiIonic, SiSupabase
 } from 'react-icons/si'
 import { AiOutlineJava, AiOutlinePython } from 'react-icons/ai'
 import { LuNetwork } from 'react-icons/lu'
@@ -17,11 +17,11 @@ export type TechName =
     // Programming Languages
     | 'JavaScript' | 'TypeScript' | 'C#' | 'Python' | 'Java'
     // Frameworks and Technologies
-    | 'React' | 'Next.js' | 'Node.js' | 'Angular' | 'ASP.NET' | 'Express' | 'Socket.IO' | 'Flask' | 'LoopBack'
+    | 'React' | 'Next.js' | 'Node.js' | 'Angular' | 'ASP.NET' | 'Express' | 'Socket.IO' | 'Flask' | 'LoopBack' | 'FastAPI' | 'Ionic' | 'Supabase'
     // Databases and ORMs
     | 'PostgreSQL' | 'MongoDB' | 'MySQL' | 'Prisma ORM' | 'Entity Framework' | 'Mongoose'
     // DevOps and Tools
-    | 'Docker' | 'GitHub Actions' | 'Git' | 'Vite' | 'AWS' | 'Vercel' | 'Nginx' | 'Netlify' | 'Render'
+    | 'Docker' | 'GitHub Actions' | 'Git' | 'Vite' | 'pnpm' | 'AWS' | 'Vercel' | 'Nginx' | 'Netlify' | 'Render'
     // Styling and UI/UX
     | 'Tailwind CSS' | 'Bootstrap' | 'MaterializeCSS' | 'Framer Motion' | 'Three.js' | 'CSS' | 'HTML'
     // Methodologies
@@ -80,6 +80,10 @@ export default function TechIcon({ name, showLabel = false, className = "h-4 w-4
         'C#': <span className="text-white font-bold text-center text-xs m-0 p-0 flex items-center justify-center" style={{ width: '12px', height: '12px' }}>C#</span>,
         'Java': <AiOutlineJava {...iconProps} />,
         'Flask': <SiFlask {...iconProps} />,
+        'FastAPI': <SiFastapi {...iconProps} />,
+        'Ionic': <SiIonic {...iconProps} />,
+        'Supabase': <SiSupabase {...iconProps} />,
+        'pnpm': <SiPnpm {...iconProps} />,
         'Git': <SiGit {...iconProps} />,
         'GitHub': <SiGithub {...iconProps} />,
         'AWS': <SiAmazonwebservices {...iconProps} />,
